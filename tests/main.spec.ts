@@ -11,6 +11,3 @@ test('Ejecutar testLogin', async () => {
   await testLogin(browser);
   console.log(`Test ejecutado en: ${browser}`);
 });
-
-// Si tienes más funciones de test, agrégalas aquí:
-// test('Otro test', async () => { await otroTest(); });
