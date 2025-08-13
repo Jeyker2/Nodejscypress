@@ -39,16 +39,16 @@ test(`Ir a login en ${browserType}`, async ({ browser }) => {
 
   // Completar los campos de email y contraseña
   await emailInput.click();
-  await emailInput.fill('juarby.sanguino@auravant.com');
+  await emailInput.fill('');
   await passwordInput.click();
-  await passwordInput.fill('Nilson123');
+  await passwordInput.fill('');
 
   // Verificar que los campos tienen los valores correctos
   // await expect(emailInput).toBeVisible();
-  await expect(emailInput).toHaveValue('juarby.sanguino@auravant.com');
+  await expect(emailInput).toHaveValue('');
 
   // await expect(passwordInput).toBeVisible();
-  await expect(passwordInput).toHaveValue('Nilson123');
+  await expect(passwordInput).toHaveValue('');
 
   // Click en el botón de entrar
   await loginButton.click();
