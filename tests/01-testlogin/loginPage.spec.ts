@@ -1,7 +1,7 @@
-import { chromium, firefox, webkit, expect, Browser } from '@playwright/test';
+import { chromium, firefox, webkit, expect, Browser, BrowserContext, Page } from '@playwright/test';
 import 'dotenv/config';
 
-export async function testLogin(browserName: 'chromium' | 'firefox' | 'webkit' = 'chromium') {
+export async function testLogin(browserName: 'chromium' | 'firefox' | 'webkit' = 'chromium'): Promise<{ browser: Browser, context: BrowserContext, page: Page }> {
   let browser: Browser;
 
   if (browserName === 'firefox') {
@@ -9,7 +9,7 @@ export async function testLogin(browserName: 'chromium' | 'firefox' | 'webkit' =
   } else if (browserName === 'webkit') {
     browser = await webkit.launch({ headless: false });
   } else {
-    browser = await chromium.launch({ headless: true });
+    browser = await chromium.launch({ headless: false });
   }
   const context = await browser.newContext({ locale: 'es-ES' });
   const page = await context.newPage();
@@ -43,6 +43,6 @@ export async function testLogin(browserName: 'chromium' | 'firefox' | 'webkit' =
   await page.getByText('J', { exact: true }).click();
   await expect(page.getByText('J', { exact: true })).toBeVisible();
 
-  await context.close();
-  await browser.close();
+  // Retorna browser, context y page para seguir usando la sesión
+  return { browser, context, page };
 }
