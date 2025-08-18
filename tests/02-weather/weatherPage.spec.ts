@@ -13,6 +13,7 @@ export async function testWeather(browserName: 'chromium' | 'firefox' | 'webkit'
 
   // Lee el token de la variable de entorno
   const token = process.env.USER_TOKEN || '';
+  const domain = process.env.DOMAIN || 'auravant.com';
 
   const context = await browser.newContext({
     locale: 'es-ES'
@@ -22,7 +23,7 @@ export async function testWeather(browserName: 'chromium' | 'firefox' | 'webkit'
   await context.addCookies([{
     name: 'com.auravant.auth', // Cambia 'token' por el nombre real de la cookie si es diferente
     value: token,
-    domain: '.auravant.com',
+    domain: '.' + domain,
     path: '/',
     httpOnly: false, // o true si tu cookie es httpOnly
     secure: true,    // o false si no es https

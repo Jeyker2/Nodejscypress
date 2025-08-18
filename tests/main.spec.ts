@@ -7,6 +7,7 @@ import { testWeather } from './02-weather/weatherPage.spec';
 // Lee el navegador desde la variable de entorno BROWSER, por defecto 'chromium'
 // BROWSER=firefox npx playwright test tests/main.spec.ts
 const browser = (process.env.BROWSER as 'chromium' | 'firefox' | 'webkit') || 'chromium';
+console.log(browser);
 
 // Aquí puedes agregar más tests o flujos de trabajo que necesites ejecutar
 test('Ejecutar testLogin', async () => {
@@ -14,7 +15,7 @@ test('Ejecutar testLogin', async () => {
   console.log(`testLogin ejecutado en: ${browser}`);
 });
 
-test('Ejecutar testWeather', async () => {
+test('auraview.weather.forescast.fecha', async () => {
   await testWeather(browser);
   console.log(`testWeather ejecutado en: ${browser}`);
 });
