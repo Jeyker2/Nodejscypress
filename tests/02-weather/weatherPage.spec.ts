@@ -31,11 +31,16 @@ export async function testWeather(browserName: 'chromium' | 'firefox' | 'webkit'
 
   const page = await context.newPage();
 
+  // Variable para el flujo de Weather
+  const weather = page.locator('.logo > svg');
+  const weatherText = page.getByText('Clima');
+  const rainfall = page.getByText('Registro de lluvias');
+
   // Solo el flujo de weather, sin login
   await page.goto('https://auravant.auravant.com/view/rainfall');
-  await page.locator('.logo > svg').click();
-  await page.getByText('Clima').click();
-  await page.getByText('Registro de lluvias').first().click();
+  await weather.click();
+  await weatherText.click();
+  await rainfall.first().click();
 
   await context.close();
   await browser.close();
