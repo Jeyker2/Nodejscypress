@@ -15,7 +15,7 @@ test('Ejecutar testLogin', async ({ page, context, browser }) => {
   console.log(`testLogin ejecutado en: ${browser.browserType().name()}`);
 });
 
-test('auraview.weather.forescast.fecha', async ({ page, context, browser }) => {
+test('auraview.weather.forescast.fecha.temperature', async ({ page, context, browser }) => {
   await testForecast(page, context);
   console.log(`testForescast ejecutado en: ${browser.browserType().name()}`);
 });

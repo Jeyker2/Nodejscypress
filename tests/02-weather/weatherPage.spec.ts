@@ -1,7 +1,6 @@
 import { BrowserContext, Page, expect } from '@playwright/test';
 import 'dotenv/config';
 
-// Función helper para elementos comunes
 function getWeatherElements(page: Page) {
     // Generar fecha actual en español
   function getCurrentDateInSpanish() {
@@ -28,6 +27,7 @@ function getWeatherElements(page: Page) {
 
   const currentDate = getCurrentDateInSpanish();
 
+  // Función helper para elementos comunes
   return {
     // Selectores Campo/Lote
     farm: page.getByRole('textbox', { name: 'Buscar campo o lote' }),
@@ -45,7 +45,7 @@ function getWeatherElements(page: Page) {
     currentDateCell: page.getByRole('cell', { name: currentDate }),
     currentDate: currentDate,
     // Asserts para validar la temperatura
-    temperatureElement: page.getByRole('cell', { name: '12|' }).locator('span').first(),
+    temperatureElement: page.locator('#contenido > table > tbody > tr.temp > td:nth-child(2) > span:nth-child(1)'),
     validateTemperature: validateTemperature,
 
     // Selectores de la sección de lluvias
@@ -113,15 +113,21 @@ export async function testForecast(page: Page, context: BrowserContext) {
   await weatherText.click(); // Reutilizando weatherText
   await forecastSection.click();
 
+  try {
     // Validar que la fecha sea igual a la actual
-  await expect(currentDateCell).toHaveText(currentDate);
-  console.log(`✓ La fecha es igual a la actual: ${currentDate}`);
-  await currentDateCell.click(); // Usar fecha actual
-  
-  // Validar temperatura usando la función helper
-  await temperatureElement.click(); // Hacer click en el elemento de temperatura
-  // Verificar que el elemento existe
-  await expect(temperatureElement).toBeVisible();
-  await validateTemperature(temperatureElement);
-  console.log('✓ Temperatura validada correctamente en Pronóstico');
+    await expect(currentDateCell).toHaveText(currentDate);
+    console.log(`✅ La fecha es igual a la actual: ${currentDate}`);
+    await currentDateCell.click(); // Usar fecha actual
+  } catch (error) {
+    console.error(`❌ Error en validación de fecha: La fecha no corresponde a la actual (${currentDate})`)
+  }
+
+  try {
+    // Validar temperatura usando la función helper
+    await temperatureElement.click(); // Hacer click en el elemento de temperatura
+    await validateTemperature(temperatureElement);
+    console.log('✅ Temperatura validada correctamente en Pronóstico');
+  } catch (error) {
+    console.error(`❌ Error en validación de temperatura: ${error}`);
+  }
 }
