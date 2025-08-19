@@ -13,6 +13,19 @@ function getWeatherElements(page: Page) {
     return `${day} de ${month}`;
   }
 
+    // Función para validar temperatura
+  async function validateTemperature(temperatureElement) {
+    const temperatureText = await temperatureElement.textContent();
+    const temperature = parseInt(temperatureText || '0');
+    
+    // Validar rango -50 a 50
+    expect(temperature).toBeGreaterThanOrEqual(-50);
+    expect(temperature).toBeLessThanOrEqual(50);
+    console.log(`✓ Temperatura válida: ${temperature}°C (rango: -50 a 50)`);
+    
+    return temperature;
+  }
+
   const currentDate = getCurrentDateInSpanish();
 
   return {
@@ -28,8 +41,12 @@ function getWeatherElements(page: Page) {
 
     // Selectores de la sección de pronóstico
     forecastSection: page.getByText('Pronóstico').first(),
+    // Asserts para validar la fecha actual
     currentDateCell: page.getByRole('cell', { name: currentDate }),
     currentDate: currentDate,
+    // Asserts para validar la temperatura
+    temperatureElement: page.getByRole('cell', { name: '12|' }).locator('span').first(),
+    validateTemperature: validateTemperature,
 
     // Selectores de la sección de lluvias
     rainfall: page.getByText('Registro de lluvias'),
@@ -83,7 +100,7 @@ export async function testForecast(page: Page, context: BrowserContext) {
     sameSite: 'Lax'
   }]);
 
-  const { farm, farmName, selectFarm, selectfield, weatherText, forecastSection, currentDateCell, currentDate } = getWeatherElements(page);
+  const { farm, farmName, selectFarm, selectfield, weatherText, forecastSection, currentDateCell, currentDate, temperatureElement,validateTemperature } = getWeatherElements(page);
 
   await page.goto('https://auravant.auravant.com/view/forecast');
 
@@ -99,7 +116,12 @@ export async function testForecast(page: Page, context: BrowserContext) {
     // Validar que la fecha sea igual a la actual
   await expect(currentDateCell).toHaveText(currentDate);
   console.log(`✓ La fecha es igual a la actual: ${currentDate}`);
-
   await currentDateCell.click(); // Usar fecha actual
-
+  
+  // Validar temperatura usando la función helper
+  await temperatureElement.click(); // Hacer click en el elemento de temperatura
+  // Verificar que el elemento existe
+  await expect(temperatureElement).toBeVisible();
+  await validateTemperature(temperatureElement);
+  console.log('✓ Temperatura validada correctamente en Pronóstico');
 }
