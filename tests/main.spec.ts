@@ -1,6 +1,6 @@
 import { test } from '@playwright/test';
 import { testLogin } from './01-testlogin/loginPage.spec';
-import { testWeather, testForecast } from './02-weather/weatherPage.spec';
+import { testRainglog, testForecast } from './02-weather/weatherPage.spec';
 
 // Puedes agregar más imports de otros archivos de test aquí
 
@@ -20,7 +20,7 @@ test('auraview.weather.forescast.fecha.temperature', async ({ page, context, bro
   console.log(`testForescast ejecutado en: ${browser.browserType().name()}`);
 });
 
-test('auraview.weather.rainlog', async ({ page, context, browser }) => {
-  await testWeather(page, context);
+test('auraview.weather.rainlog.grafico.validateCalendarDate', async ({ page, context, browser }) => {
+  await testRainglog(page, context);
   console.log(`testWeather ejecutado en: ${browser.browserType().name()}`);
 });
