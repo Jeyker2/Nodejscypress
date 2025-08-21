@@ -45,17 +45,18 @@ export default defineConfig({
     
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome'], launchOptions: { args: ['--incognito'] } },
     },
 
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      use: { ...devices['Desktop Firefox'], launchOptions: { args: ['-private'] } },
+
     },
 
     {
       name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      use: { ...devices['Desktop Safari'], launchOptions: { args: ['--private-browsing'] } },
     },
 
     /* Test against mobile viewports. */

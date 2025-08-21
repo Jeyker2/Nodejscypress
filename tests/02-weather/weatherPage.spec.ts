@@ -53,6 +53,12 @@ function getWeatherElements(page: Page) {
     graphElement: page.locator('[aura-test="chart"][class*="grafico"][class*="js-plotly-plot"]'),
     raingLog: page.getByRole('button', { name: 'Registrar lluvia' }),
     elementCalendar: page.locator('[aura-test="content-layout"] .aura-calendar-month-selector-text'),
+    selectBox: page.getByRole('cell', { name: '14' }),
+    rainfallInput: page.getByRole('spinbutton'),
+    saveRainglog: page.getByRole('button', { name: 'Guardar' }),
+    tooltipSaverainglog: page.getByText('Registro de lluvia modificado'),
+    closeRainglog: page.locator('line').nth(1),
+    elementValue: page.locator('[aura-test="date-14"] .aura-calendar-td-content'),
   };
 }
 
@@ -73,7 +79,7 @@ export async function testRainglog(page: Page, context: BrowserContext) {
   }]);
 
 
-  const { farm, farmName, selectFarm, selectfield, weatherText, rainfall, graphElement, raingLog, elementCalendar } = getWeatherElements(page);
+  const { farm, farmName, selectFarm, selectfield, weatherText, rainfall, graphElement, raingLog, elementCalendar, selectBox, rainfallInput, saveRainglog, tooltipSaverainglog, closeRainglog, elementValue } = getWeatherElements(page);
 
   await page.goto('https://auravant.auravant.com/view/rainfall');
 
@@ -85,8 +91,9 @@ export async function testRainglog(page: Page, context: BrowserContext) {
   await weatherText.click(); // Reutilizando weatherText
   await rainfall.click();
   await validateGraph();
-  await raingLog.click();
+  // await raingLog.click();
   await validateCalendarDate();
+  await registerRainfall();
 
 // Funcion para validar el gráfico
 async function validateGraph() {
@@ -133,6 +140,9 @@ async function validateGraph() {
     // const elementCalendar = page.locator('[aura-test="content-layout"] .aura-calendar-month-selector-text');
     
     try {
+
+      // Selecciona el button Registrar lluvia
+      await raingLog.click();
      
       // Espera a que el texto del calendario sea visible
       await expect(elementCalendar).toBeVisible();
@@ -183,11 +193,72 @@ async function validateGraph() {
     }
   }
 
-  // Validar fecha del calendario
-  // await validateCalendarDate();
+  // Función para registrar lluvia
+async function registerRainfall() {
+  try {
 
+    // Selecciona el cuadro de lluvia
+    await selectBox.click();
+
+    // Generar número aleatorio para la lluvia
+    // const rainfallValue = (Math.random() * 100).toFixed(1);
+    // Generar número aleatorio entre 2.5 y 10.0 con 2 decimales
+    const num = Math.random() * (10.0 - 2.5) + 2.5;
+    const rainfallValue = Math.round(num * 100) / 100;
+    
+    // Borra el contenido del input y escribe el número generado
+    await rainfallInput.clear();
+    console.log(`✅ Input de lluvia borrado`);
+    await rainfallInput.click();
+    await rainfallInput.fill(rainfallValue.toString());
+
+    // Validar que el valor se escribió correctamente en el input
+    const inputValue = await rainfallInput.inputValue();
+    const inputValueFloat = parseFloat(inputValue);
+    expect(inputValueFloat).toBe(rainfallValue);
+    console.log(`✅ Valor validado en input: ${inputValueFloat}mm coincide con ${rainfallValue}mm`);
+    
+    // Hace clic en el botón de guardar
+    await saveRainglog.click();
+
+    // Valida que la acción se procese (espera a que aparezca algún mensaje de éxito o que el botón cambie)
+    await expect(tooltipSaverainglog).toBeEnabled();
+    // await tooltipSaverainglog.click();
+    console.log(`✅ Tooltip de registro de lluvia visible: MSJ 'Registro de lluvia modificado'`);
+
+    console.log(`✅ Lluvia registrada: ${rainfallValue}mm`);
+
+    // Hace clic en el botón de cerrar Registro de lluvia
+    await expect(closeRainglog).toBeVisible();
+    await closeRainglog.click();
+    console.log(`✅ Registro de lluvia cerrado`);
+
+    // Seleccionar Registro de lluvia
+    await rainfall.click();
+    console.log(`✅ Volviendo a la sección de Registro de lluvia`);
+
+    // Selecciona Registrar lluvia
+    await raingLog.click();
+    console.log(`✅ Volviendo a Registrar lluvia`);
+
+    // Validar que el valor aparece en elementValue
+    await elementValue.click();
+    const elementText = (await elementValue.textContent())?.trim();
+    const elementValueFloat = parseFloat(elementText || '0');
+    expect(elementValueFloat).toBe(rainfallValue);
+    console.log(`✅ Valor validado en calendario: ${elementValueFloat}mm coincide con ${rainfallValue}mm`);
+
+    // Devuelve el valor registrado
+    return rainfallValue;
+    
+  } catch (error) {
+    console.log(`❌ Error al registrar lluvia: ${error.message}`);
+    throw error;
+  }
+}
 
 }
+
 export async function testForecast(page: Page, context: BrowserContext) {
   const token = process.env.USER_TOKEN || '';
   const domain = process.env.DOMAIN || 'auravant.com';
