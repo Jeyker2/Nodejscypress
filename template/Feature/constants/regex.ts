@@ -1,0 +1,1 @@
+export const REGEX_EXAMPLE = 'example.regex'

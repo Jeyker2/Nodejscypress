@@ -1,7 +1,6 @@
-import { chromium, firefox, webkit, expect, Browser, BrowserContext, Page } from '@playwright/test';
-import 'dotenv/config';
+import { expect, Page } from '@playwright/test';
 
-export async function testLogin(page: Page, context: BrowserContext): Promise<void> {
+export async function testLogin(page: Page): Promise<void> {
   await page.goto('https://auraview.auravant.com/login');
 
   // Click en un elemento
