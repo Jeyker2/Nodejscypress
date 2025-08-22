@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npx playwright test tests/main.spec.ts",
     "create-test": "sh scripts/create_test_structure.sh",
-    "start-default": "npx playwright test --project=chromium tests/main.spec.ts --ui",
+    "start-default": "npx playwright test tests/main.spec.ts --ui",
     "restart-main": "sh scripts/regenerate_main_spec.sh"
   },
   "keywords": [],

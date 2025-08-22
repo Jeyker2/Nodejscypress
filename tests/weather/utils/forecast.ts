@@ -29,21 +29,19 @@ export async function testForecast(page: Page, context: BrowserContext) {
   await weatherText.click(); // Reutilizando weatherText
   await forecastSection.click();
 
-  try {
+
     // Validar que la fecha sea igual a la actual
     await expect(currentDateCell).toHaveText(currentDate);
     console.log(`✅ La fecha es igual a la actual: ${currentDate}`);
     await currentDateCell.click(); // Usar fecha actual
-  } catch (error) {
-    console.error(`❌ Error en validación de fecha: La fecha no corresponde a la actual (${currentDate})`)
-  }
 
-  try {
+    
+
+
     // Validar temperatura usando la función helper
     await temperatureElement.click(); // Hacer click en el elemento de temperatura
     await validateTemperature(temperatureElement);
     console.log('✅ Temperatura validada correctamente en Pronóstico');
-  } catch (error) {
-    console.error(`❌ Error en validación de temperatura: ${error}`);
-  }
+
+
 }

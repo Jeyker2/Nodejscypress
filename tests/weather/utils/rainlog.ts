@@ -37,7 +37,6 @@ export async function testRainglog(page: Page, context: BrowserContext) {
 // Funcion para validar el gráfico
 async function validateGraph() {
 
-    try {
        // Espera a que el gráfico aparezca en el DOM
       await expect(graphElement).toBeVisible();
       console.log("✅ El gráfico de lluvias es visible.");
@@ -67,18 +66,13 @@ async function validateGraph() {
       }
 
       console.log("✅ El gráfico contiene datos con fechas.");
-    } catch (error) {
-      console.log(`❌ Error en validación del gráfico: ${error.message}`);
-      throw error;
-    }
+
   
   }
     
   // Función para validar fecha del calendario
   async function validateCalendarDate() {
     // const elementCalendar = page.locator('[aura-test="content-layout"] .aura-calendar-month-selector-text');
-    
-    try {
 
       // Selecciona el button Registrar lluvia
       await raingLog.click();
@@ -126,15 +120,11 @@ async function validateGraph() {
       
       console.log(`✅ Fecha del calendario válida: ${calendarText} coincide con la fecha actual`);
       
-    } catch (error) {
-      console.log(`❌ Error en validación del calendario: ${error.message}`);
-      throw error;
-    }
+
   }
 
   // Función para registrar lluvia
 async function registerRainfall() {
-  try {
 
     // Selecciona el cuadro de lluvia
     await selectBox.click();
@@ -190,10 +180,6 @@ async function registerRainfall() {
     // Devuelve el valor registrado
     return rainfallValue;
     
-  } catch (error) {
-    console.log(`❌ Error al registrar lluvia: ${error.message}`);
-    throw error;
-  }
 }
 
 }
