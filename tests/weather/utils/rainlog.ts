@@ -55,17 +55,39 @@ async function validateGraph() {
           x: trace.x,
         }));
 
-      // Valida que haya al menos un conjunto de datos con valores reales
+        // Valida que haya al menos un conjunto de datos con valores reales
       const hasData = extractedData.some((data: any) => data.y && data.y.length > 0);
       expect(hasData).toBeTruthy();
 
-      // Imprime en consola los datos encontrados
+      // Validación por desviación estándar
       for (const data of extractedData) {
-        console.log(`📅 Fechas: ${data.x}`);
-        console.log(`📈 Valores Y: ${data.y}`);
+        const values = data.y.filter(val => val !== null && val !== undefined);
+        
+        if (values.length > 1) {
+          // Calcular media
+          const mean = values.reduce((sum, val) => sum + val, 0) / values.length;
+          
+          // Calcular desviación estándar
+          const variance = values.reduce((sum, val) => sum + Math.pow(val - mean, 2), 0) / values.length;
+          const stdDev = Math.sqrt(variance);
+          
+          // Imprimir valores de desviación estándar
+          console.log(`📊 DESVIACIÓN ESTÁNDAR: ${stdDev.toFixed(4)}`);
+          console.log(`📊 Media: ${mean.toFixed(2)}`);
+          console.log(`📊 Varianza: ${variance.toFixed(4)}`);
+          console.log(`📊 Límite máximo permitido (300% de media): ${(mean * 3).toFixed(2)}`);
+
+          // Validar que la desviación estándar esté en un rango razonable
+          expect(stdDev).toBeGreaterThanOrEqual(0);
+          expect(stdDev).toBeLessThan(mean * 3); // 300% de la media
+          // expect(stdDev).toBeLessThan(5); // Límite fijo de 5
+          
+          console.log(`📅 Fechas: ${data.x}`);
+          console.log(`📈 Valores Y: ${data.y}`);
+        }
       }
 
-      console.log("✅ El gráfico contiene datos con fechas.");
+      console.log("✅ El gráfico contiene datos válidos con desviación estándar aceptable.");
 
   
   }
