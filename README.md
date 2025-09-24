@@ -1,66 +1,125 @@
-# NodeJS Playwright Tests
+# NodejsPlaywright - Pruebas Automatizadas Auravant
+
+Este proyecto contiene pruebas automatizadas con Playwright para la plataforma Auravant, incluyendo flujos como login, clima, histogramas y validaciones de forecast y rainlog.
+
+---
+
+## Requisitos
+
+- Node.js 18.x o superior
+- npm
+- Acceso a un token de autenticación válido (`com.auravant.auth`)
+
+---
+
+## Instalación
+
+1. **Clona el repositorio:**
+
+   ```bash
+   git clone https://gitlab.com/<TU_USUARIO>/<TU_REPO>.git
+   cd <TU_REPO>
+   ```
+
+2. **Instala las dependencias:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Instala los navegadores de Playwright:**
+
+   ```bash
+   npx playwright install
+   ```
+
+---
+
+## Configuración
+
+1. **Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido:**
+
+   ```
+   USER_TOKEN=tu_token_de_cookie
+   DOMAIN=auravant.com
+   ```
+
+   - El valor de `USER_TOKEN` debe ser el valor real de la cookie `com.auravant.auth` obtenida tras iniciar sesión manualmente.
+   - Puedes ajustar `DOMAIN` si tu entorno lo requiere.
+
+---
 
 ## Estructura del Proyecto
 
 ```
-NodejsPlaywrigt/
-├── tests/
-│   ├── main.spec.ts                    # Archivo principal de tests
-│   ├── 01-testlogin/
-│   │   └── loginPage.spec.ts          # Test de login
-│   └── 02-weather/
-│       └── weatherPage.spec.ts        # Test de clima
-├── playwright.config.ts               # Configuración de Playwright
-├── package.json                       # Dependencias del proyecto
-└── .env                              # Variables de entorno
+tests/
+  ├── Histogram/
+  │     ├── index.spec.ts
+  │     └── utils/
+  │           └── histogram.ts
+  ├── Login/
+  │     └── index.spec.ts
+  ├── weather/
+  │     ├── index.spec.ts
+  │     └── utils/
+  │           ├── forecast.ts
+  │           ├── rainlog.ts
+  │           └── constants/
+  │                 └── regex.ts
+  └── main.spec.ts
+.env
+playwright.config.ts
+package.json
 ```
 
-## Instalación
+---
+
+## Ejecución de Pruebas
+
+### Scripts disponibles
+
+- **Ejecutar todos los tests principales:**
+  ```bash
+  npm start
+  ```
+
+- **Ejecutar los tests principales con la interfaz interactiva de Playwright:**
+  ```bash
+  npm run start-default
+  ```
+
+- **Crear una nueva estructura de test:**
+  ```bash
+  npm run create-test
+  ```
+
+- **Regenerar el archivo main.spec.ts automáticamente:**
+  ```bash
+  npm run restart-main
+  ```
+
+---
+
+### Ejemplo de ejecución avanzada
+
+Puedes combinar los scripts con argumentos de Playwright.  
+Por ejemplo, para ejecutar solo el test `auraview.histogram.validateElementsAndData` en el proyecto `webkit` y con la interfaz interactiva:
 
 ```bash
-npm install
+npm start -- -g 'auraview.histogram.validateElementsAndData' --project=webkit --ui
 ```
 
-## Variables de Entorno
+---
 
-Crear archivo `.env` con:
+## Notas
 
-```
-USER_EMAIL=tu_email@ejemplo.com
-USER_PASSWORD=tu_contraseña
-USER_TOKEN=tu_token_de_autenticacion
-DOMAIN=auravant.com
-```
+- El flujo de autenticación se realiza mediante la cookie `com.auravant.auth` agregada automáticamente desde la variable de entorno `USER_TOKEN`.
+- Si tu token expira, deberás actualizarlo en el archivo `.env`.
+- No subas el archivo `.env` al repositorio (ya está en `.gitignore`).
+- Puedes modificar o agregar nuevos flujos en la carpeta `tests/`.
 
-## Ejecución de Tests
+---
 
-### Ejecutar en browser específico:
-```bash
-# Chromium
-npx playwright test --project=chromium tests/main.spec.ts
+## Contacto
 
-# Firefox
-npx playwright test --project=firefox tests/main.spec.ts
-
-# Safari/WebKit
-npx playwright test --project=webkit tests/main.spec.ts
-```
-
-### Ejecutar en todos los browsers:
-```bash
-npx playwright test tests/main.spec.ts
-```
-
-### Ejecutar tests individuales:
-```bash
-# Solo login
-npx playwright test -g "Ejecutar testLogin"
-
-# Solo weather
-npx playwright test -g "auraview.weather.forescast.fecha"
-```
-
-## Tests Disponibles
-
-- **testLogin**: Automatiza el proceso de login en la plataforma
-- **testWeather**: Navega por la sección de clima y registro de lluvias
+Para dudas o soporte, contacta al equipo de QA o desarrollo
