@@ -1,31 +1,6 @@
-import { expect, Page } from "@playwright/test";
+import { expect, Locator, Page } from "@playwright/test";
 
-export function getWeatherElements(page: Page) {
-    // Generar fecha actual en español
-  function getCurrentDateInSpanish() {
-    const today = new Date();
-    const months = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 
-                    'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
-    const day = today.getDate();
-    const month = months[today.getMonth()];
-    return `${day} de ${month}`;
-  }
-
-    // Función para validar temperatura
-  async function validateTemperature(temperatureElement) {
-    const temperatureText = await temperatureElement.textContent();
-    const temperature = parseInt(temperatureText || '0');
-    
-    // Validar rango -50 a 50
-    expect(temperature).toBeGreaterThanOrEqual(-50);
-    expect(temperature).toBeLessThanOrEqual(50);
-    console.log(`✓ Temperatura válida: ${temperature}°C (rango: -50 a 50)`);
-    
-    return temperature;
-  }
-
-  const currentDate = getCurrentDateInSpanish();
-
+export function getWeatherElements(page: Page, currentDate: string, validateTemperature: string) {
   // Función helper para elementos comunes
   return {
     // Selectores Campo/Lote

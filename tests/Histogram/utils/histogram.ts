@@ -74,8 +74,6 @@ console.log(`✅ Completado: Se hizo click en ${numbersToClick.length} números 
   }
   // Flujo de integracion con el histograma
 
-
-
   // await histogramContainer.click();
   // await histogramTooltip.click(); // Reutilizando histogramTooltip
   // await histogramBars.click();
