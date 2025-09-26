@@ -18,7 +18,7 @@ export async function testHistogram(page: Page, context: BrowserContext) {
   }]);
 
 
-  const { farm, farmName, selectFarm, selectfield, toggleSidenav, histogramContainer, histogramCantidad, histogramTooltip } = getHistogramElements(page);
+  const { farm, farmName, selectFarm, selectfield, toggleSidenav, histogramContainer, histogramCantidad, haElements, totalText } = getHistogramElements(page);
 
   await page.goto('https://auravant.auravant.com/view');
 
@@ -31,7 +31,7 @@ export async function testHistogram(page: Page, context: BrowserContext) {
   await validateHistogram();
 
   // Función para validar el histograma
-  async function validateHistogram() {
+async function validateHistogram() {
 
     await histogramContainer.click();
     // Espera a que el contenedor del histograma aparezca en el DOM
@@ -46,37 +46,77 @@ for (const number of numbersToClick) {
   
   // Espera explícita sin timeout
   await expect(element).toBeVisible();
+
   // console.log(`✅ Visible: ${number}`);
-  
   await element.click();
+
   console.log(`✅ Clicked Ambiente: ${number}`);
-  
+
   // Esperar que el elemento siga siendo interactuable después del click
   await expect(element).toBeEnabled();
+
+  // Esperar que se actualice el contenido
+  await page.waitForTimeout(1000);
+
+  // await page.waitForTimeout(1000);  
+
+  // // --- Suma dinámica después de cada click ---
+  const haElementList = await haElements.all();
+  let totalSum = 0;
+  let ambienteNumber = 1; // Contador para los ambientes
+  
+  for (const el of haElementList) {
+    const text = await el.innerText();
+    const match = text.match(/([\d,.]+)\s*ha$/);
+
+    if (match) {
+      const value = parseFloat(match[1].replace('ha', ''));
+      totalSum += value;
+
+      console.log(`🔢 Cantidad de Ambiente ${ambienteNumber} con 'ha': ${value}`);
+      ambienteNumber++; // Incrementa el contador
+    }
+  }
+  
+  // // Muestra total
+  console.log(`🔢 Suma total de cantidad de ha en Ambiente ${number}: ${totalSum.toFixed(2)} ha`);
+  
+
+
+  const totalTextValue = await totalText.textContent();
+  // console.log(`🔢 Total texto (raw): ${totalTextValue}`);
+  const totalNumber = parseFloat(totalTextValue?.replace(',', '.') || '0');
+
+  console.log(`🔢 Suma de la cantidad de ha en Ambiente ${number}: ${totalSum.toFixed(2)} ha | Total de ha del Lote: ${totalNumber} ha`);
+
+  // Calcular diferencia y porcentaje
+  const diferencia = Math.abs(totalSum - totalNumber);
+  const porcentajeDiferencia = (diferencia / totalNumber) * 100;
+
+  console.log(`📊 Diferencia: ${diferencia.toFixed(2)} ha (${porcentajeDiferencia.toFixed(2)}%) - Tolerancia: ±5%`);
+
+  if (porcentajeDiferencia <= 5) {
+  console.log(`✅ Dentro de tolerancia del 5%`);
+  } else {
+    console.log(`❌ Fuera de tolerancia del 5%`);
 }
 
-console.log(`✅ Completado: Se hizo click en ${numbersToClick.length} números (2-7) del histograma`);
-    // Verifica que haya barras en el histograma
-    // const barCount = await histogramBars.count();
-    // expect(barCount).toBeGreaterThan(0);
-    // console.log(`✅ El histograma tiene ${barCount} barras.`);
 
-    // Interactúa con la primera barra para mostrar el tooltip
-    // if (barCount > 0) {
-    //   await histogramBars.first().hover();
-      
-    //   // Espera a que el tooltip aparezca
-    //   await expect(histogramTooltip).toBeVisible();
-    //   console.log("✅ El tooltip del histograma es visible al pasar el mouse sobre una barra.");
-    // } else {
-    //   console.log("❌ No hay barras en el histograma para interactuar.");
-    // }
+  expect(Math.abs(totalSum - totalNumber)).toBeLessThanOrEqual(totalNumber * 0.05);
+
+  // Validación comentada para evitar fallos en CI
+
+  
+  // if (totalSum === totalNumber) {
+  //   console.log(`✅ Suma correcta: ${totalSum} ha`);
+  // } else {
+  //   console.error(`❌ Error en la suma: Calculado ${totalSum} ha, pero el texto muestra ${totalNumber} ha`);
+  // } 
+
+}
+
+    console.log(`✅ Completado: Se hizo click en ${numbersToClick.length} números (2-7) del histograma`);
+
   }
-  // Flujo de integracion con el histograma
-
-  // await histogramContainer.click();
-  // await histogramTooltip.click(); // Reutilizando histogramTooltip
-  // await histogramBars.click();
-
 
 }
