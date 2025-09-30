@@ -1,4 +1,4 @@
-import { expect, Locator, Page } from "@playwright/test";
+import { Page } from "@playwright/test";
 
 export function getWeatherElements(page: Page, currentDate: string, validateTemperature: string) {
   // Función helper para elementos comunes
@@ -15,6 +15,9 @@ export function getWeatherElements(page: Page, currentDate: string, validateTemp
 
     // Selectores de la sección de pronóstico
     forecastSection: page.getByText('Pronóstico').first(),
+    // assert para validar el texto 
+    forecastText: page.locator('#arch__feature--body').getByText('Pronóstico', { exact: true }),
+    closedForecast: page.locator('#arch__feature--container svg').nth(1),
     // Asserts para validar la fecha actual
     currentDateCell: page.getByRole('cell', { name: currentDate }),
     currentDate: currentDate,
@@ -24,6 +27,11 @@ export function getWeatherElements(page: Page, currentDate: string, validateTemp
 
     // Selectores de la sección de lluvias
     rainfall: page.getByText('Registro de lluvias').first(),
+    // Asserts para validar el texto
+    rainfallText: page.locator('#arch__feature--body').getByText('Registro de lluvias', { exact: true }),
+    // Asserts para validar el gráfico
+    rainfallGraph: page.locator('.nsewdrag'),
+    // Asserts para validar el gráfico
     graphElement: page.locator('[aura-test="chart"][class*="grafico"][class*="js-plotly-plot"]'),
     raingLog: page.getByRole('button', { name: 'Registrar lluvia' }),
     elementCalendar: page.locator('[aura-test="content-layout"] .aura-calendar-month-selector-text'),
