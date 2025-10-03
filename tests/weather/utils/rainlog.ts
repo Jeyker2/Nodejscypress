@@ -18,7 +18,7 @@ export async function testRainglog(page: Page, context: BrowserContext) {
   }]);
 
 
-  const { farm, farmName, selectFarm, selectfield, weatherText, rainfall, graphElement, raingLog, elementCalendar, selectBox, rainfallInput, saveRainglog, tooltipSaverainglog, closeRainglog, elementValue } = getWeatherElements(page);
+  const { farm, farmName, selectFarm, selectfield, weatherText, rainfall, graphElement, rainLog, elementCalendar, selectBox, rainfallInput, saveRainlog, tooltipSaveRainlog, closeRainlog } = getWeatherElements(page);
 
   await page.goto('https://auravant.auravant.com/view/rainfall');
 
@@ -65,10 +65,10 @@ async function validateGraph() {
         
         if (values.length > 1) {
           // Calcular media
-          const mean = values.reduce((sum, val) => sum + val, 0) / values.length;
+          const mean = values.reduce((sum: number, val: number) => sum + val, 0) / values.length;
           
           // Calcular desviación estándar
-          const variance = values.reduce((sum, val) => sum + Math.pow(val - mean, 2), 0) / values.length;
+          const variance = values.reduce((sum: number, val: number) => sum + Math.pow(val - mean, 2), 0) / values.length;
           const stdDev = Math.sqrt(variance);
           
           // Imprimir valores de desviación estándar
@@ -97,7 +97,7 @@ async function validateGraph() {
     // const elementCalendar = page.locator('[aura-test="content-layout"] .aura-calendar-month-selector-text');
 
       // Selecciona el button Registrar lluvia
-      await raingLog.click();
+      await rainLog.click();
      
       // Espera a que el texto del calendario sea visible
       await expect(elementCalendar).toBeVisible();
@@ -170,18 +170,18 @@ async function registerRainfall() {
     console.log(`✅ Valor validado en input: ${inputValueFloat}mm coincide con ${rainfallValue}mm`);
     
     // Hace clic en el botón de guardar
-    await saveRainglog.click();
+    await saveRainlog.click();
 
     // Valida que la acción se procese (espera a que aparezca algún mensaje de éxito o que el botón cambie)
-    await expect(tooltipSaverainglog).toBeEnabled();
+    await expect(tooltipSaveRainlog).toBeEnabled();
     // await tooltipSaverainglog.click();
     console.log(`✅ Tooltip de registro de lluvia visible: MSJ 'Registro de lluvia modificado'`);
 
     console.log(`✅ Lluvia registrada: ${rainfallValue}mm`);
 
     // Hace clic en el botón de cerrar Registro de lluvia
-    await expect(closeRainglog).toBeVisible();
-    await closeRainglog.click();
+    await expect(closeRainlog).toBeVisible();
+    await closeRainlog.click();
     console.log(`✅ Registro de lluvia cerrado`);
 
     // Seleccionar Registro de lluvia
@@ -189,7 +189,7 @@ async function registerRainfall() {
     console.log(`✅ Volviendo a la sección de Registro de lluvia`);
 
     // Selecciona Registrar lluvia
-    await raingLog.click();
+    await rainLog.click();
     console.log(`✅ Volviendo a Registrar lluvia`);
 
     // Validar que el valor aparece en elementValue

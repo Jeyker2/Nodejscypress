@@ -33,13 +33,13 @@ export function getWeatherElements(page: Page, currentDate: string, validateTemp
     rainfallGraph: page.locator('.nsewdrag'),
     // Asserts para validar el gráfico
     graphElement: page.locator('[aura-test="chart"][class*="grafico"][class*="js-plotly-plot"]'),
-    raingLog: page.getByRole('button', { name: 'Registrar lluvia' }),
+    rainLog: page.getByRole('button', { name: 'Registrar lluvia' }),
     elementCalendar: page.locator('[aura-test="content-layout"] .aura-calendar-month-selector-text'),
     selectBox: page.getByRole('cell', { name: '14' }),
     rainfallInput: page.getByRole('spinbutton'),
-    saveRainglog: page.getByRole('button', { name: 'Guardar' }),
-    tooltipSaverainglog: page.getByText('Registro de lluvia modificado'),
-    closeRainglog: page.locator('line').nth(1),
+    saveRainlog: page.getByRole('button', { name: 'Guardar' }),
+    tooltipSaveRainlog: page.getByText('Registro de lluvia modificado'),
+    closeRainlog: page.locator('line').nth(1),
     elementValue: page.locator('[aura-test="date-14"] .aura-calendar-td-content'),
   };
 }

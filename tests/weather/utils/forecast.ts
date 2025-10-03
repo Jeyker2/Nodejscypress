@@ -1,6 +1,6 @@
 import { BrowserContext, expect, Locator, Page } from "@playwright/test";
 import { getWeatherElements } from "./getElements";
-import { get } from "http";
+
 
 export async function testForecast(page: Page, context: BrowserContext) {
   const token = process.env.USER_TOKEN || '';

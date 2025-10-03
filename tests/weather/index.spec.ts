@@ -15,7 +15,6 @@ test(REGEX_RAINLOG, async ({ page, context, browser }) => {
 });
 
 test(REGEX_ALL_OPEN, async ({ page, context, browser }) => {
-  // Aquí puedes llamar a las funciones que desees ejecutar en este test
   await testallOpen(page, context);
   console.log(`allOpen ejecutado en: ${browser.browserType().name()}`);
 });
