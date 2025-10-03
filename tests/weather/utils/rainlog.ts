@@ -61,7 +61,7 @@ async function validateGraph() {
 
       // Validación por desviación estándar
       for (const data of extractedData) {
-        const values = data.y.filter(val => val !== null && val !== undefined);
+        const values = data.y.filter((val: any) => val !== null && val !== undefined);
         
         if (values.length > 1) {
           // Calcular media
