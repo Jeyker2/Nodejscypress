@@ -22,14 +22,14 @@ export async function testForecast(page: Page, context: BrowserContext) {
     const today = new Date();
     const months = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 
                     'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
-    const day = today.getDate();
+    const day = today.getDate().toString().padStart(2, '0');
     const month = months[today.getMonth()];
     return `${day} de ${month}`;
   }
   const currentDate = getCurrentDateInSpanish();
   
   // 2. Pasa currentDate a getWeatherElements
-  const { farm, farmName, selectFarm, selectfield, weatherText, forecastSection, temperatureElement, currentDateCell } = getWeatherElements(page, currentDate, validateTemperature);
+  const { farm, farmName, selectFarm, selectfield, weatherText, forecastSection, temperatureElement, currentDateCell } = getWeatherElements(page);
 
   await page.goto('https://auravant.auravant.com/view/forecast');
 
@@ -43,9 +43,10 @@ export async function testForecast(page: Page, context: BrowserContext) {
 
   // Validar que la fecha sea igual a la actual
   // const currentDate = await getCurrentDateInSpanish();
-  await expect(currentDateCell).toHaveText(currentDate);
+  const dateCell = currentDateCell(currentDate);
+  await expect(dateCell).toHaveText(currentDate);
   console.log(`✅ La fecha es igual a la actual: ${currentDate}`);
-  await currentDateCell.click();
+  await dateCell.click();
 
   // Función para validar temperatura
   async function validateTemperature(temperatureElement: Locator) {

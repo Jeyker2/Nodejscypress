@@ -133,7 +133,7 @@ async function validateGraph() {
       
       // Separa el texto del calendario en mes y año
       const [monthText, yearText] = calendarText.trim().split(' ');
-      const calendarMonth = monthsDict[monthText];
+      const calendarMonth = monthsDict[monthText as keyof typeof monthsDict];
       const calendarYear = parseInt(yearText);
       
       // Valida que coincidan

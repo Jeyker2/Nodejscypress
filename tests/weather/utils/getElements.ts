@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test";
 
-export function getWeatherElements(page: Page, currentDate: string, validateTemperature: string) {
+export function getWeatherElements(page: Page) {
   // Función helper para elementos comunes
   return {
     // Selectores Campo/Lote
@@ -19,11 +19,11 @@ export function getWeatherElements(page: Page, currentDate: string, validateTemp
     forecastText: page.locator('#arch__feature--body').getByText('Pronóstico', { exact: true }),
     closedForecast: page.locator('#arch__feature--container svg').nth(1),
     // Asserts para validar la fecha actual
-    currentDateCell: page.getByRole('cell', { name: currentDate }),
-    currentDate: currentDate,
+    currentDateCell: (currentDate: string)=> page.getByRole('cell', { name: currentDate }),
+    currentDate: (currentDate: string)=> currentDate,
     // Asserts para validar la temperatura
     temperatureElement: page.locator('#contenido > table > tbody > tr.temp > td:nth-child(2) > span:nth-child(1)'),
-    validateTemperature: validateTemperature,
+    validateTemperature: (validateTemperature: string) => validateTemperature,
 
     // Selectores de la sección de lluvias
     rainfall: page.getByText('Registro de lluvias').first(),
