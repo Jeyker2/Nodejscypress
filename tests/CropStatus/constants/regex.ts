@@ -1,0 +1,1 @@
+export const REGEX_CROP_STATUS = 'cropstatus.regex.validateCropStatus'
