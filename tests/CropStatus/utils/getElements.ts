@@ -20,8 +20,12 @@ export function getcropStatusElements(page: Page) {
     cropStatusSectionField2: page.getByText('Admin 3').first(),
     // Selector del gráfico de estado del cultivo
     cropStatusGraph: page.locator('[aura-test="content-layout"] #div_contenedor_historico .js-plotly-plot'),
-    closedCropStatus: page.locator('#arch__feature--container svg').first(),
-    cropStatusText: page.locator('#arch__feature--body').getByText('Estado del cultivo', { exact: true }),
+    cropStatusGraphData: page.locator('[aura-test="content-layout"] #grafico-ndvi-historico'),
+    closedCropStatus: page.locator('[aura-test="windowCloseIcon"]').first(),
+    cropStatusText: page.getByText('Estado del cultivo').first(),
+    // Selectores de fecha inicio y fin
+    startDateElement: page.locator('div').filter({ hasText: /^Desde\d{2}\/\d{2}\/\d{4}$/ }),
+    endDateElement: page.locator('div').filter({ hasText: /^Hasta\d{2}\/\d{2}\/\d{4}$/ }),
     // Selectores de la sección de alertas
     alertsSection: page.locator('#arch__feature--container').getByText('Alertas', { exact: true }),
     closedAlerts: page.locator('#arch__feature--container svg').nth(1),
