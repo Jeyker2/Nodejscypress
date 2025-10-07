@@ -26,13 +26,14 @@ export function getcropStatusElements(page: Page) {
     // Selectores de fecha inicio y fin
     startDateElement: page.locator('div').filter({ hasText: /^Desde\d{2}\/\d{2}\/\d{4}$/ }),
     endDateElement: page.locator('div').filter({ hasText: /^Hasta\d{2}\/\d{2}\/\d{4}$/ }),
-    // Selectores de la sección de alertas
-    alertsSection: page.locator('#arch__feature--container').getByText('Alertas', { exact: true }),
-    closedAlerts: page.locator('#arch__feature--container svg').nth(1),
-    alertsText: page.locator('#arch__feature--body').getByText('Alertas', { exact: true }),
-    // Selectores de la sección de recomendaciones
-    recommendationsSection: page.locator('#arch__feature--container').getByText('Recomendaciones', { exact: true }),
-    closedRecommendations: page.locator('#arch__feature--container svg').nth(2),
-    recommendationsText: page.locator('#arch__feature--body').getByText('Recomendaciones', { exact: true }),
+    // Seleccionar nuevas fechas inicio y fin
+    startDateInput: page.locator('div').filter({ hasText: /^Desde\d{2}\/\d{2}\/\d{4}$/ }),
+    endDateInput: page.locator('div').filter({ hasText: /^Hasta\d{2}\/\d{2}\/\d{4}$/ }),
+    // Botón aplicar fechas
+    applyDateButtonStartMonth: page.getByRole('button', { name: '>', exact: true }),
+    applyDateButtonStart: page.getByRole('button', { name: '5', exact: true }),
+    applyDateButtonEndMonth: page.getByRole('button', { name: '<', exact: true }),
+    applyDateButtonEnd: page.getByRole('button', { name: '8', exact: true }),
+
   };
 }

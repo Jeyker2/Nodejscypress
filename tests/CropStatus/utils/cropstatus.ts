@@ -19,7 +19,7 @@ export async function testcropStatus(page: Page, context: BrowserContext) {
     sameSite: 'Lax'
   }]);
 
-  const { farm, farmName, selectFarm, selectfield, toggleSidenav, cropStatusSection, cropStatusSectionCrop, cropStatusGraph, cropStatusSectionField, cropStatusSectionField1, cropStatusSectionField2, closedCropStatus, cropStatusText, startDateElement, endDateElement, cropStatusGraphData } = getcropStatusElements(page);
+  const { farm, farmName, selectFarm, selectfield, toggleSidenav, cropStatusSection, cropStatusSectionCrop, cropStatusGraph, cropStatusSectionField, cropStatusSectionField1, cropStatusSectionField2, closedCropStatus, cropStatusText, startDateElement, endDateElement, cropStatusGraphData, startDateInput, endDateInput, applyDateButtonStart, applyDateButtonStartMonth, applyDateButtonEndMonth, applyDateButtonEnd } = getcropStatusElements(page);
 
   // Aquí iría la lógica específica para probar el estado del cultivo
   await page.goto('https://auravant.auravant.com/view/cropstatus');
@@ -233,6 +233,61 @@ async function validateCropcStatusDate() {
     }
 
     await page.waitForTimeout(2000);
+
+    // Seleccionar nuevas fechas
+    await expect(startDateInput).toBeVisible();
+    await startDateInput.click();
+    await applyDateButtonStartMonth.click();
+    await applyDateButtonStart.click();
+    console.log("✅ Nueva fecha de inicio seleccionada.");
+
+    await expect(endDateInput).toBeVisible();
+    await endDateInput.click();
+    await applyDateButtonEndMonth.click();
+    await applyDateButtonEnd.click();
+    console.log("✅ Nueva fecha de fin seleccionada.");
+
+    // Esperar a que el gráfico se actualice
+    await page.waitForTimeout(3000);
+
+    // Extraer nuevos datos del gráfico después del cambio de fechas
+    const newXAxisData = await cropStatusGraphData.evaluate((graph: any) => {
+      if (graph && graph.data) {
+        const allXData = graph.data.map((trace: any) => trace.x || []).flat();
+        return allXData.map((date: string) => ({
+          original: date,
+          formatted: new Date(date).toLocaleDateString()
+        }));
+      }
+      return [];
+    });
+
+    // Obtener fechas únicas del nuevo gráfico
+    const newUniqueXAxisData = newXAxisData.filter((date: any, index: number, self: any[]) => 
+      index === self.findIndex((d: any) => d.original === date.original)
+    );
+
+    // Calcular nuevas estadísticas
+    if (newUniqueXAxisData.length > 0) {
+      const newTimestamps = newUniqueXAxisData.map((d: any) => new Date(d.original).getTime());
+      const newMeanTimestamp = newTimestamps.reduce((sum: number, val: number) => sum + val, 0) / newTimestamps.length;
+      const newVariance = newTimestamps.reduce((sum: number, val: number) => sum + Math.pow(val - newMeanTimestamp, 2), 0) / newTimestamps.length;
+      const newStdDev = Math.sqrt(newVariance);
+      const newMeanDate = new Date(newMeanTimestamp);
+      const newStdDevDays = newStdDev / (1000 * 60 * 60 * 24);
+      
+      console.log(`\n📊 COMPARACIÓN DE ESTADÍSTICAS:`);
+      console.log(`📊 ANTES del cambio de fechas:`);
+      console.log(`   Total fechas: ${uniqueXAxisData.length}`);
+      console.log(`   Rango: ${uniqueXAxisData[0]?.formatted} - ${uniqueXAxisData[uniqueXAxisData.length - 1]?.formatted}`);
+      
+      console.log(`📊 DESPUÉS del cambio de fechas:`);
+      console.log(`   Total fechas: ${newUniqueXAxisData.length}`);
+      console.log(`   Fecha media: ${newMeanDate.toLocaleDateString()}`);
+      console.log(`   Desviación estándar: ${newStdDevDays.toFixed(1)} días`);
+      console.log(`   Rango: ${newUniqueXAxisData[0]?.formatted} - ${newUniqueXAxisData[newUniqueXAxisData.length - 1]?.formatted}`);
+    }
+
 
     
     // Espera que este visible el buton de cerrar
