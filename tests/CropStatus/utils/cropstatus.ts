@@ -30,7 +30,7 @@ export async function testcropStatus(page: Page, context: BrowserContext) {
   await selectFarm.click();
   await selectfield.click();
   await toggleSidenav.click();
-  // await validateCropStatusDateGraph();
+  await validateCropStatusDateGraph();
   await validateCropcStatusDate();
 
   // Validaciones específicas del estado del cultivo  
@@ -234,18 +234,29 @@ async function validateCropcStatusDate() {
 
     await page.waitForTimeout(2000);
 
+    // Extraer fechas de ambos elementos
+    const newstartDate = await startDateElement.evaluate(el => 
+      el.textContent?.match(/(\d{2}\/\d{2}\/\d{4})/)?.[1]
+    );
+
+    const newendDate = await endDateElement.evaluate(el => 
+      el.textContent?.match(/(\d{2}\/\d{2}\/\d{4})/)?.[1]
+    );
+
     // Seleccionar nuevas fechas
     await expect(startDateInput).toBeVisible();
     await startDateInput.click();
     await applyDateButtonStartMonth.click();
     await applyDateButtonStart.click();
     console.log("✅ Nueva fecha de inicio seleccionada.");
+    console.log(`Fecha inicio: ${newstartDate}`);
 
     await expect(endDateInput).toBeVisible();
     await endDateInput.click();
     await applyDateButtonEndMonth.click();
     await applyDateButtonEnd.click();
     console.log("✅ Nueva fecha de fin seleccionada.");
+    console.log(`Fecha fin: ${newendDate}`);
 
     // Esperar a que el gráfico se actualice
     await page.waitForTimeout(3000);

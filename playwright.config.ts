@@ -31,7 +31,9 @@ export default defineConfig({
     headless: false, // Ejecutar en modo no headless para ver la UI
     locale: 'es-ES',
     viewport: { width: 1280, height: 720 },
-  
+    // timeout: 30000, // Aumentar timeout global a 30 segundos
+    // actionTimeout: 10000, // Timeout para acciones individuales
+    // navigationTimeout: 30000, // Timeout para navegación
 
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://localhost:3000',

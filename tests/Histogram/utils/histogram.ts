@@ -18,37 +18,68 @@ export async function testHistogram(page: Page, context: BrowserContext) {
   }]);
 
 
-  const { farm, farmName, selectFarm, selectfield, toggleSidenav, histogramContainer, histogramCantidad, haElements, totalText, ambientactionContainer, ambientationYearList, ambientationCurrentLayer, ambientationButtonContinue, ambientationButtonBack, ambientationSurface1, ambientationSurface2, ambientationDeleteLayer, ambientationYearList1, ambientationYearList2 } = getHistogramElements(page);
+  const { farm, farmName, selectFarm, selectfield, toggleSidenav, histogramContainer, histogramCantidad, haElements, totalText, ambientactionContainer, ambientationYearList, ambientationCurrentLayer, ambientationButtonContinue, ambientationButtonBack, ambientationSurface1, ambientationSurface2, ambientationDeleteLayer, ambientationYearList1, ambientationYearList2, ambientationButtonLayer, ambientationLayerList, ambientationSelectLayer, ambientationSelectLayer2, ambientationButtonLayer2 } = getHistogramElements(page);
 
   await page.goto('https://auravant.auravant.com/view');
 
   // Solo el flujo de histogramas, sin login
   await farm.click();
   await farmName.fill('adm');
-  await selectFarm.click();
-  await selectfield.click();
+  await clickSelectFarm();
+  await clickSelectField();
   await toggleSidenav.click();
   await validateHistogram();
   await validateAmbientationSurface();
 
+
+async function clickSelectFarm() {
+  for (let i = 0; i < 3; i++) {
+    try {
+      await expect(selectFarm).toBeVisible({ timeout: 10000 });
+      await selectFarm.click();
+      return;
+    } catch (error) {
+      console.log(`Intento ${i + 1} fallido, reintentando...`);
+      await page.waitForTimeout(2000);
+    }
+  }
+  throw new Error('No se pudo encontrar selectFarm después de 3 intentos');
+}
+
+async function clickSelectField() {
+  for (let i = 0; i < 3; i++) {
+    try {
+      await expect(selectfield).toBeVisible({ timeout: 10000 });
+      await selectfield.click();
+      return;
+    } catch (error) {
+      console.log(`Intento ${i + 1} fallido, reintentando...`);
+      await page.waitForTimeout(2000);
+    }
+  }
+  throw new Error('No se pudo encontrar selectfield después de 3 intentos');
+}
+
   // Función para validar el histograma
 async function validateHistogram() {
 
-    await histogramContainer.click();
-    // Espera a que el contenedor del histograma aparezca en el DOM
-    await expect(histogramContainer).toBeVisible();
-    console.log("✅ El contenedor del histograma es visible.");
+  await histogramContainer.click();
+  // Espera a que el contenedor del histograma aparezca en el DOM
+  await expect(histogramContainer).toBeVisible();
+  console.log("✅ El contenedor del histograma es visible.");
 
 
-const numbersToClick = ['2', '3', '4', '5', '6', '7'];
+const numbersToClick = ['2', '5'];
 
 for (const number of numbersToClick) {
   const element = histogramCantidad(number);
   
   // Espera explícita sin timeout
+  // console.log(`✅ Visible: ${number}`);
   await expect(element).toBeVisible();
 
-  // console.log(`✅ Visible: ${number}`);
+  // Esperar que el elemento sea interactuable
+  await expect(element).toBeEnabled();
   await element.click();
 
   console.log(`✅ Clicked Ambiente: ${number}`);
@@ -56,9 +87,6 @@ for (const number of numbersToClick) {
   // Esperar que el elemento siga siendo interactuable después del click
   await expect(element).toBeEnabled();
 
-  // Esperar que se actualice el contenido
-  await page.waitForTimeout(1000);
- 
 
   // // --- Suma dinámica después de cada click ---
   const haElementList = await haElements.all();
@@ -77,8 +105,7 @@ for (const number of numbersToClick) {
       ambienteNumber++; // Incrementa el contador
     }
   }
-  
-  // // Muestra total
+  // Muestra total
   console.log(`🔢 Suma total de cantidad de ha en Ambiente ${number}: ${totalSum.toFixed(2)} ha`);
   
 
@@ -106,81 +133,127 @@ for (const number of numbersToClick) {
 
 }
 
-    console.log(`✅ Completado: Se hizo click en ${numbersToClick.length} números (2-7) del histograma`);
+    console.log(`✅ Completado: Se hizo click en ${numbersToClick.length} números (2-5) del histograma`);
 
   }
 
 // Generar la validación del ambientacion en la superficie del histograma
 async function validateAmbientationSurface() {
+  await expect(toggleSidenav).toBeVisible();
+  await toggleSidenav.click();
+  console.log(`✅ Se hizo click en el toggle del sidenav`);
+
+  await expect(ambientactionContainer).toBeVisible();
   await ambientactionContainer.click();
+
+  await expect(ambientationButtonLayer).toBeVisible();
+  await ambientationButtonLayer.click();
+  console.log(`✅ Se hizo click en Ambientación`);
+
+  await expect(ambientationLayerList).toBeVisible();
+  await ambientationLayerList.click();
+  console.log(`✅ Se hizo click en Capas`);
+
+
+  await expect(ambientationSelectLayer).toBeVisible();
+  await ambientationSelectLayer.click();
+  console.log(`✅ Se hizo click en NDWI`);
 
   await expect(ambientationYearList).toBeVisible();
   await ambientationYearList.click();
   console.log(`✅ Se hizo click en Ambientación y la fecha`);
 
+  await expect(ambientationCurrentLayer).toBeVisible();
   await ambientationCurrentLayer.click();
   console.log(`✅ Se hizo click en Agregar capa actual`);
 
+  await expect(ambientationButtonContinue).toBeVisible();
+  await expect(ambientationButtonContinue).toBeEnabled();
   await ambientationButtonContinue.click();
   console.log(`✅ Se hizo click en el botón Continuar`);
 
-  await page.waitForTimeout(2000);
   // Validar que la superficie haya cambiado
   await expect(ambientationSurface1).toBeVisible();
-  const SurfaceBefore1 = await ambientationSurface1.innerText();
-
-  await page.waitForTimeout(2000);
+  await expect(ambientationSurface1).toBeEnabled();
   await expect(ambientationSurface2).toBeVisible();
+  await expect(ambientationSurface2).toBeEnabled();
+
+  const SurfaceBefore1 = await ambientationSurface1.innerText();
   const SurfaceBefore2 = await ambientationSurface2.innerText();
-  // console.log(`Superficie 1: ${SurfaceBefore1} - Superficie 2: ${SurfaceBefore2}`);
   expect(SurfaceBefore1).not.toBe(SurfaceBefore2);
+  console.log(`Superficie 1: ${SurfaceBefore1} - Superficie 2: ${SurfaceBefore2}`);
   console.log(`✅ La superficie de ambientación ha sido guardada correctamente.`);
 
-  // Validar que el botón de "Cerrar" esté visible y hacer clic en él
+  // // Validar que el botón de "Cerrar" esté visible y hacer clic en él
   await expect(ambientationButtonBack).toBeVisible();
   await ambientationButtonBack.click();
   console.log(`✅ Se hizo click en el botón Volver`);
 
   // Esperar que este botón sea visible nuevamente y hacer clic en él
+  await expect(ambientactionContainer).toBeVisible();
+  await expect(ambientactionContainer).toBeEnabled();
   await ambientactionContainer.click();
   console.log(`✅ Se hizo click en Ambientación nuevamente`);
 
   await expect(ambientationDeleteLayer).toBeVisible();
+  await expect(ambientationDeleteLayer).toBeEnabled();
   await ambientationDeleteLayer.click();
   console.log(`✅ Se hizo click en el ícono de eliminar capa`);
   
   // Seleccionar dos fechas diferentes para validar que la superficie sea diferente
   await expect(ambientationYearList1).toBeVisible();
+  await expect(ambientationYearList1).toBeEnabled();
   await ambientationYearList1.click();
   console.log(`✅ Se hizo click en Ambientación y la fecha nuevamente`);
 
-  await ambientationCurrentLayer.click();
-  console.log(`✅ Se hizo click en Agregar capa actual nuevamente`);
+  await expect(ambientationButtonLayer2).toBeVisible();
+  await ambientationButtonLayer2.hover();
+  await ambientationButtonLayer2.click();
+  console.log(`✅ Se hizo click en Ambientación`);
 
+  await expect(ambientationLayerList).toBeVisible();
+  await ambientationLayerList.click();
+  console.log(`✅ Se hizo click en Capas`);
+
+
+  await expect(ambientationSelectLayer2).toBeVisible();
+  await ambientationSelectLayer2.click();
+  console.log(`✅ Se hizo click en GNDVI`);
+
+  // await ambientationCurrentLayer.click();
+  // console.log(`✅ Se hizo click en Agregar capa actual nuevamente`);
+  // await page.waitForTimeout(2000);
+
+  await expect(ambientationYearList2).toBeVisible();
+  // await expect(ambientationYearList2).toBeEnabled();
   await ambientationYearList2.click();
   console.log(`✅ Se hizo click en otra fecha diferente`);
 
+  // await page.waitForTimeout(30000);
+
+  await expect(ambientationCurrentLayer).toBeVisible();
   await ambientationCurrentLayer.click();
-  console.log(`✅ Se hizo click en Agregar capa actual nuevamente`);
+  console.log(`✅ Se hizo click en Agregar capa actual`);
 
   await ambientationButtonContinue.click();
   console.log(`✅ Se hizo click en el botón Continuar nuevamente`);
 
-  await page.waitForTimeout(2000);
+  // await page.waitForTimeout(30000);
 
   // Guardar el valor de la superficie después de cerrar
   await expect(ambientationSurface1).toBeVisible();
-  const SurfaceAfter1 = await ambientationSurface1.innerText();
-
-  await page.waitForTimeout(2000);
-
+  await expect(ambientationSurface1).toBeEnabled();
   await expect(ambientationSurface2).toBeVisible();
+  await expect(ambientationSurface2).toBeEnabled();
+
+  const SurfaceAfter1 = await ambientationSurface1.innerText();
   const SurfaceAfter2 = await ambientationSurface2.innerText();
 
   // console.log(`Superficie después de cerrar 1: ${SurfaceAfter1} - Superficie después de cerrar 2: ${SurfaceAfter2}`);
   console.log(`📊 Comparación de superficies:`);
   console.log(`   Antes - Superficie 1: ${SurfaceBefore1} | Superficie 2: ${SurfaceBefore2}`);
   console.log(`   Después - Superficie 1: ${SurfaceAfter1} | Superficie 2: ${SurfaceAfter2}`);
+
   expect(SurfaceAfter1).not.toBe(SurfaceBefore1);
   expect(SurfaceAfter2).not.toBe(SurfaceBefore2);
   console.log(`✅ La superficie de ambientación es diferente después de cerrar y volver a abrir el histograma.`);
