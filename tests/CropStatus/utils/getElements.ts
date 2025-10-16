@@ -12,8 +12,9 @@ export function getcropStatusElements(page: Page) {
     // Elemento toggle-sidenav
     toggleSidenav: page.locator('[aura-test="toggle-sidenav-button"]').first(),
     // Selectores de la sección de estado del cultivo
+    cropStatusFeature: page.getByText('Estado del cultivo'),
     cropStatusSection: page.locator('[aura-test="container-layout"] .field-crop .crop'),
-    cropStatusSectionCrop: page.locator('#arch__feature--body').getByText('Arroz'),
+    cropStatusSectionCrop: page.locator('[aura-test="dropdown_item_2"]').filter({ hasText: /^Arroz$/ }),
     // Selector de Lotes en Estado del cultivo
     cropStatusSectionField: page.locator('[aura-test="container-layout"] .field-crop-container .field'),
     cropStatusSectionField1: page.getByText('Admin 2').first(),

@@ -19,10 +19,10 @@ export async function testcropStatus(page: Page, context: BrowserContext) {
     sameSite: 'Lax'
   }]);
 
-  const { farm, farmName, selectFarm, selectfield, toggleSidenav, cropStatusSection, cropStatusSectionCrop, cropStatusGraph, cropStatusSectionField, cropStatusSectionField1, cropStatusSectionField2, closedCropStatus, cropStatusText, startDateElement, endDateElement, cropStatusGraphData, startDateInput, endDateInput, applyDateButtonStart, applyDateButtonStartMonth, applyDateButtonEndMonth, applyDateButtonEnd } = getcropStatusElements(page);
+  const { farm, farmName, selectFarm, selectfield, toggleSidenav, cropStatusFeature, cropStatusSection, cropStatusSectionCrop, cropStatusGraph, cropStatusSectionField, cropStatusSectionField1, cropStatusSectionField2, closedCropStatus, cropStatusText, startDateElement, endDateElement, cropStatusGraphData, startDateInput, endDateInput, applyDateButtonStart, applyDateButtonStartMonth, applyDateButtonEndMonth, applyDateButtonEnd } = getcropStatusElements(page);
 
   // Aquí iría la lógica específica para probar el estado del cultivo
-  await page.goto('https://auravant.auravant.com/view/cropstatus');
+  await page.goto('https://auravant.auravant.com/view');
 
   // Solo el flujo de Crop Status, sin login
   await farm.click();
@@ -35,15 +35,22 @@ export async function testcropStatus(page: Page, context: BrowserContext) {
 
   // Validaciones específicas del estado del cultivo  
 async function validateCropStatusDateGraph() {
+  await expect(toggleSidenav).toBeVisible();
+  console.log("✅ El botón de menú lateral es visible.");
+  await toggleSidenav.click();
+
+  await expect(cropStatusFeature).toBeVisible();
+  console.log("✅ La opción de Estado del cultivo es visible en el menú lateral.");
+  await cropStatusFeature.click();
 
   // Espera a que el contenedor del estado del cultivo aparezca en el DOM
-  
   await expect(cropStatusSection).toBeVisible();
   console.log("✅ La sección de Estado del cultivo es visible.");
   await cropStatusSection.click();
 
   // Validar que el cultivo "Arroz" esté visible
   await expect(cropStatusSectionCrop).toBeVisible();
+  await expect (cropStatusSectionCrop).toHaveText(/Arroz/);
   console.log("✅ El cultivo Arroz está visible en la sección de Estado del cultivo.");
   await cropStatusSectionCrop.click();
 
@@ -93,12 +100,58 @@ yAxisData.forEach((trace: any) => {
 
 async function validateCropcStatusDate() {
 
-    // Espera a que el contenedor del estado del cultivo aparezca en el DOM
+  // Espera a que el contenedor del estado del cultivo aparezca en el DOM
     await expect(cropStatusText).toBeVisible();
     console.log("✅ La sección de Estado del cultivo es visible.");
     await cropStatusText.click();
 
-    // Validar la fecha inicial y fecha final
+    await page.waitForTimeout(2000); // Espera adicional para asegurar que el gráfico se haya cargado
+
+    // Espera a que el gráfico aparezca en el DOM
+    await expect(cropStatusGraphData).toBeVisible({ timeout: 10000 });
+    console.log("✅ El gráfico de Estado del cultivo es visible.");
+
+    // Espera hasta que el gráfico tenga datos cargados (timeout de 10 segundos)
+
+    await page.waitForFunction(async () => {
+      try {
+        const hasData = await cropStatusGraphData.evaluate((graph: any) => {
+          return graph && graph.data && graph.data[0] && graph.data[0].y && graph.data[0].y.length > 0;
+        });
+        return hasData;
+      } catch {
+        return false;
+      }
+    }, { timeout: 10000 });
+
+    console.log("✅ El gráfico tiene datos cargados");
+
+    // 1. CAPTURAR ESTADÍSTICAS INICIALES
+    const initialStats = await cropStatusGraphData.evaluate((graph: any) => {
+      if (graph && graph.data && graph.data[0] && graph.data[0].y) {
+        const arr = graph.data[0].y;
+        const mean = arr.reduce((a: number, b: number) => a + b, 0) / arr.length;
+        const variance = arr.reduce((sum: number, val: number) => sum + Math.pow(val - mean, 2), 0) / arr.length;
+        return { 
+          mean, 
+          stdDev: Math.sqrt(variance), 
+          dataPoints: arr.length,
+          values: arr // ← Agregar los valores originales
+        };
+      }
+      return { mean: 0, stdDev: 0, dataPoints: 0, values: [] };
+    });
+
+    // Valores initialStats:
+    console.log('🔍 DEBUG - Valores iniciales:');
+    console.log(`   Mean: ${initialStats.mean}`);
+    console.log(`   StdDev: ${initialStats.stdDev}`);
+    console.log(`   DataPoints: ${initialStats.dataPoints}`);
+
+    console.log('🔍 VALORES INICIALES:');
+    console.log(`   Valores Y: [${initialStats.values.slice(0, 10).join(', ')}${initialStats.values.length > 10 ? '...' : ''}]`);
+    console.log(`   Total valores: ${initialStats.values.length}`);
+    console.log(`   Suma total: ${initialStats.values.reduce((a:number, b:number) => a + b, 0).toFixed(2)}`);
 
     // Extraer fechas de ambos elementos
     const startDate = await startDateElement.evaluate(el => 
@@ -120,187 +173,91 @@ async function validateCropcStatusDate() {
 
     await page.waitForTimeout(2000); 
 
-    // Extraer fechas del eje X del gráfico
-    const xAxisData = await cropStatusGraphData.evaluate((graph: any) => {
-      if (graph && graph.data) {
-        const allXData = graph.data.map((trace: any) => trace.x || []).flat();
-        return allXData.map((date: string) => ({
-          original: date,
-          formatted: new Date(date).toLocaleDateString()
-        }));
-      }
-      return [];
-    });
-    
-    console.log('📊 Fechas del gráfico:');
-    console.log(`📊 Total de fechas: ${xAxisData.length}`);
-    console.log(`📊 Primera fecha: ${xAxisData[0]?.formatted}`);
-    console.log(`📊 Última fecha: ${xAxisData[xAxisData.length - 1]?.formatted}`);
-    console.log('📊 Todas las fechas:', xAxisData.map((d: any) => d.formatted));
+    // 2. CAMBIAR FECHAS
+    console.log('\n🔄 Cambiando fechas...');
 
-  // Validar que las fechas del gráfico estén dentro del rango seleccionado
-  // Encontrar fechas cercanas al rango seleccionado
-  // Convertir fechas con formato explícito DD/MM/YYYY
-    const parseDate = (dateStr: string) => {
-      const [day, month, year] = dateStr.split('/');
-      return new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
-    };
-
-    const selectedStartDate = parseDate(startDate);
-    const selectedEndDate = parseDate(endDate);
-
-    console.log(`🔍 DEBUG - Fecha inicio: ${startDate} → ${selectedStartDate.toLocaleDateString()}`);
-    console.log(`🔍 DEBUG - Fecha fin: ${endDate} → ${selectedEndDate.toLocaleDateString()}`);
-
-    // Obtener fechas únicas del gráfico (eliminar duplicados)
-    const uniqueXAxisData = xAxisData.filter((date: any, index: number, self: any[]) => 
-      index === self.findIndex((d: any) => d.original === date.original)
-    );
-
-    console.log('📊 Fechas únicas del gráfico:');
-    console.log(`📊 Total de fechas únicas: ${uniqueXAxisData.length}`);
-    console.log('📊 Fechas únicas:', uniqueXAxisData.map((d: any) => d.formatted));
-
-    // AGREGAR AQUÍ EL CÓDIGO DE ESTADÍSTICAS
-    // Calcular estadísticas de los datos X (fechas)
-    if (uniqueXAxisData.length > 0) {
-      // Convertir fechas a timestamps para cálculos
-      const timestamps = uniqueXAxisData.map((d: any) => new Date(d.original).getTime());
-      
-      // Calcular media de timestamps
-      const meanTimestamp = timestamps.reduce((sum: number, val: number) => sum + val, 0) / timestamps.length;
-      
-      // Calcular desviación estándar
-      const variance = timestamps.reduce((sum: number, val: number) => sum + Math.pow(val - meanTimestamp, 2), 0) / timestamps.length;
-      const stdDev = Math.sqrt(variance);
-      
-      // Convertir resultados a fechas legibles
-      const meanDate = new Date(meanTimestamp);
-      const stdDevDays = stdDev / (1000 * 60 * 60 * 24); // Convertir a días
-      
-      console.log(`📊 Estadísticas de fechas X:`);
-      console.log(`   Fecha media: ${meanDate.toLocaleDateString()}`);
-      console.log(`   Desviación estándar: ${stdDevDays.toFixed(1)} días`);
-      console.log(`   Rango: ${uniqueXAxisData[0]?.formatted} - ${uniqueXAxisData[uniqueXAxisData.length - 1]?.formatted}`);
-    }
-
-    // Encontrar fechas más cercanas usando las fechas únicas
-    const closestToStart = uniqueXAxisData.reduce((closest: any, current: any) => {
-      const currentDate = new Date(current.original);
-      const closestDate = new Date(closest.original);
-      
-      const currentDiff = Math.abs(currentDate.getTime() - selectedStartDate.getTime());
-      const closestDiff = Math.abs(closestDate.getTime() - selectedStartDate.getTime());
-      
-      return currentDiff < closestDiff ? current : closest;
-    });
-
-    const closestToEnd = uniqueXAxisData.reduce((closest: any, current: any) => {
-      const currentDate = new Date(current.original);
-      const closestDate = new Date(closest.original);
-      
-      const currentDiff = Math.abs(currentDate.getTime() - selectedEndDate.getTime());
-      const closestDiff = Math.abs(closestDate.getTime() - selectedEndDate.getTime());
-      
-      return currentDiff < closestDiff ? current : closest;
-    });
-
-    // Calcular diferencias exactas
-    const startDifference = Math.abs(selectedStartDate.getTime() - new Date(closestToStart.original).getTime()) / (1000 * 60 * 60 * 24);
-    const endDifference = Math.abs(selectedEndDate.getTime() - new Date(closestToEnd.original).getTime()) / (1000 * 60 * 60 * 24);
-
-    console.log(`\n📊 COMPARACIÓN DETALLADA:`);
-    console.log(`📅 Fecha inicio seleccionada: ${startDate}`);
-    console.log(`📅 Fecha más cercana en gráfico: ${closestToStart.formatted}`);
-    console.log(`⏱️  Diferencia exacta: ${startDifference.toFixed(1)} días`);
-
-    console.log(`📅 Fecha fin seleccionada: ${endDate}`);
-    console.log(`📅 Fecha más cercana en gráfico: ${closestToEnd.formatted}`);
-    console.log(`⏱️  Diferencia exacta: ${endDifference.toFixed(1)} días`);
-
-    // Verificar coincidencias exactas
-    console.log(`\n📊 ANÁLISIS DE COINCIDENCIAS:`);
-    if (startDifference < 1) {
-      console.log(`✅ Fecha inicio: COINCIDENCIA EXACTA o muy cercana`);
-    } else {
-      console.log(`⚠️  Fecha inicio: APROXIMADA (${Math.round(startDifference)} días de diferencia)`);
-    }
-
-    if (endDifference < 1) {
-      console.log(`✅ Fecha fin: COINCIDENCIA EXACTA o muy cercana`);
-    } else {
-      console.log(`⚠️  Fecha fin: APROXIMADA (${Math.round(endDifference)} días de diferencia)`);
-    }
-
-    await page.waitForTimeout(2000);
-
-    // Extraer fechas de ambos elementos
-    const newstartDate = await startDateElement.evaluate(el => 
-      el.textContent?.match(/(\d{2}\/\d{2}\/\d{4})/)?.[1]
-    );
-
-    const newendDate = await endDateElement.evaluate(el => 
-      el.textContent?.match(/(\d{2}\/\d{2}\/\d{4})/)?.[1]
-    );
-
-    // Seleccionar nuevas fechas
-    await expect(startDateInput).toBeVisible();
     await startDateInput.click();
     await applyDateButtonStartMonth.click();
     await applyDateButtonStart.click();
-    console.log("✅ Nueva fecha de inicio seleccionada.");
-    console.log(`Fecha inicio: ${newstartDate}`);
+    console.log("✅ Nueva fecha de inicio aplicada");
 
-    await expect(endDateInput).toBeVisible();
     await endDateInput.click();
     await applyDateButtonEndMonth.click();
     await applyDateButtonEnd.click();
-    console.log("✅ Nueva fecha de fin seleccionada.");
-    console.log(`Fecha fin: ${newendDate}`);
+    console.log("✅ Nueva fecha de fin aplicada");
 
-    // Esperar a que el gráfico se actualice
-    await page.waitForTimeout(3000);
+    await page.waitForTimeout(3000); // Esperar actualización del gráfico
 
-    // Extraer nuevos datos del gráfico después del cambio de fechas
-    const newXAxisData = await cropStatusGraphData.evaluate((graph: any) => {
-      if (graph && graph.data) {
-        const allXData = graph.data.map((trace: any) => trace.x || []).flat();
-        return allXData.map((date: string) => ({
-          original: date,
-          formatted: new Date(date).toLocaleDateString()
-        }));
-      }
-      return [];
-    });
-
-    // Obtener fechas únicas del nuevo gráfico
-    const newUniqueXAxisData = newXAxisData.filter((date: any, index: number, self: any[]) => 
-      index === self.findIndex((d: any) => d.original === date.original)
+    // Capturar las nuevas fechas después del cambio
+    const newStartDate = await startDateElement.evaluate(el => 
+      el.textContent?.match(/(\d{2}\/\d{2}\/\d{4})/)?.[1]
     );
 
-    // Calcular nuevas estadísticas
-    if (newUniqueXAxisData.length > 0) {
-      const newTimestamps = newUniqueXAxisData.map((d: any) => new Date(d.original).getTime());
-      const newMeanTimestamp = newTimestamps.reduce((sum: number, val: number) => sum + val, 0) / newTimestamps.length;
-      const newVariance = newTimestamps.reduce((sum: number, val: number) => sum + Math.pow(val - newMeanTimestamp, 2), 0) / newTimestamps.length;
-      const newStdDev = Math.sqrt(newVariance);
-      const newMeanDate = new Date(newMeanTimestamp);
-      const newStdDevDays = newStdDev / (1000 * 60 * 60 * 24);
-      
-      console.log(`\n📊 COMPARACIÓN DE ESTADÍSTICAS:`);
-      console.log(`📊 ANTES del cambio de fechas:`);
-      console.log(`   Total fechas: ${uniqueXAxisData.length}`);
-      console.log(`   Rango: ${uniqueXAxisData[0]?.formatted} - ${uniqueXAxisData[uniqueXAxisData.length - 1]?.formatted}`);
-      
-      console.log(`📊 DESPUÉS del cambio de fechas:`);
-      console.log(`   Total fechas: ${newUniqueXAxisData.length}`);
-      console.log(`   Fecha media: ${newMeanDate.toLocaleDateString()}`);
-      console.log(`   Desviación estándar: ${newStdDevDays.toFixed(1)} días`);
-      console.log(`   Rango: ${newUniqueXAxisData[0]?.formatted} - ${newUniqueXAxisData[newUniqueXAxisData.length - 1]?.formatted}`);
-    }
+    const newEndDate = await endDateElement.evaluate(el => 
+      el.textContent?.match(/(\d{2}\/\d{2}\/\d{4})/)?.[1]
+    );
+
+    console.log('\n📅 FECHAS CAMBIADAS:');
+    console.log(`📅 Fecha inicio: ${startDate} → ${newStartDate}`);
+    console.log(`📅 Fecha fin: ${endDate} → ${newEndDate}`);
+
+    // 3. RECALCULAR ESTADÍSTICAS
+    const newStats = await cropStatusGraphData.evaluate((graph: any) => {
+      if (graph && graph.data && graph.data[0] && graph.data[0].y) {
+        const arr = graph.data[0].y;
+        const mean = arr.reduce((a: number, b: number) => a + b, 0) / arr.length;
+        const variance = arr.reduce((sum: number, val: number) => sum + Math.pow(val - mean, 2), 0) / arr.length;
+        return { 
+          mean, 
+          stdDev: Math.sqrt(variance), 
+          dataPoints: arr.length,
+          values: arr // ← Agregar los valores originales
+        };
+      }
+      return { mean: 0, stdDev: 0, dataPoints: 0, values: [] };
+    });
+
+    // Valores newStats:
+    console.log('🔍 DEBUG - Valores finales:');
+    console.log(`   Mean: ${newStats.mean}`);
+    console.log(`   StdDev: ${newStats.stdDev}`);
+    console.log(`   DataPoints: ${newStats.dataPoints}`);
+
+    // 4. COMPARAR RESULTADOS
+    console.log('🔍 VALORES DESPUÉS DEL CAMBIO:');
+    console.log(`   Valores Y: [${newStats.values.slice(0, 10).join(', ')}${newStats.values.length > 10 ? '...' : ''}]`);
+    console.log(`   Total valores: ${newStats.values.length}`);
+    console.log(`   Suma total: ${newStats.values.reduce((a:number, b:number) => a + b, 0).toFixed(2)}`);
 
 
-    
+    // Reemplaza las líneas donde calculas meanChange y stdDevChange
+    const meanChange = initialStats.mean !== 0 
+      ? ((newStats.mean - initialStats.mean) / initialStats.mean * 100).toFixed(2)
+      : 'N/A (valor inicial es 0)';
+
+    const stdDevChange = initialStats.stdDev !== 0 
+      ? ((newStats.stdDev - initialStats.stdDev) / initialStats.stdDev * 100).toFixed(2)
+      : 'N/A (valor inicial es 0)';
+
+    console.log(`📈 Cambio en media: ${meanChange}%`);
+    console.log(`📈 Cambio en desviación estándar: ${stdDevChange}%`);
+
+    // 5. VALIDACIONES CON ASSERTS
+    // Validar que las fechas cambiaron
+    expect(startDate).not.toBe(newStartDate);
+    expect(endDate).not.toBe(newEndDate);
+    console.log('✅ ASSERT: Las fechas cambiaron correctamente');
+
+    // Validar que las estadísticas cambiaron
+    expect(initialStats.mean).not.toBe(newStats.mean);
+    expect(initialStats.stdDev).not.toBe(newStats.stdDev);
+    console.log('✅ ASSERT: Las estadísticas cambiaron correctamente');
+
+    // Validar que hay datos en ambos períodos
+    expect(initialStats.dataPoints).toBeGreaterThan(0);
+    expect(newStats.dataPoints).toBeGreaterThan(0);
+    console.log('✅ ASSERT: Ambos períodos tienen datos válidos');
+
     // Espera que este visible el buton de cerrar
     await expect(closedCropStatus).toBeVisible();
     console.log("✅ El ícono de cerrar en Estado del cultivo es visible.");
