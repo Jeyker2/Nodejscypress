@@ -1,10 +1,9 @@
 import { BrowserContext, expect, Page } from '@playwright/test';
 import { getcropStatusElements } from './getElements';
-import { time } from 'console';
 
 export async function testcropStatus(page: Page, context: BrowserContext) {
 
-    // Lee el token de la variable de entorno
+  // Lee el token de la variable de entorno
   const token = process.env.USER_TOKEN || '';
   const domain = process.env.DOMAIN || 'auravant.com';
 
@@ -105,7 +104,7 @@ async function validateCropcStatusDate() {
     console.log("✅ La sección de Estado del cultivo es visible.");
     await cropStatusText.click();
 
-    await page.waitForTimeout(2000); // Espera adicional para asegurar que el gráfico se haya cargado
+    await page.waitForTimeout(3000); // Espera adicional para asegurar que el gráfico se haya cargado
 
     // Espera a que el gráfico aparezca en el DOM
     await expect(cropStatusGraphData).toBeVisible({ timeout: 10000 });

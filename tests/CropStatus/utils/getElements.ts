@@ -36,5 +36,10 @@ export function getcropStatusElements(page: Page) {
     applyDateButtonEndMonth: page.getByRole('button', { name: '<', exact: true }),
     applyDateButtonEnd: page.getByRole('button', { name: '8', exact: true }),
 
+    // Selectores de Temperatura y Precipitación
+    precipitationCheckbox: page.locator('div').filter({ hasText: /^Precipitaciones$/ }).nth(1),
+    precipitationDate:  page.getByText('Personalizado'),
+    precipitationDateOneYear: page.getByText('12 meses'),
+
   };
 }
