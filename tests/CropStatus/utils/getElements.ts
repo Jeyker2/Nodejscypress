@@ -40,6 +40,7 @@ export function getcropStatusElements(page: Page) {
     precipitationCheckbox: page.locator('div').filter({ hasText: /^Precipitaciones$/ }).nth(1),
     precipitationDate:  page.getByText('Personalizado'),
     precipitationDateOneYear: page.getByText('12 meses'),
+    precipitationDownloadExcel: page.getByRole('button', { name: 'Descargar Excel' }),
 
   };
 }
