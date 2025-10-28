@@ -153,8 +153,8 @@ async function clickSelectField() {
  async function validateExcelDownload() {
     // 1. CONFIGURACIÓN INICIAL
     await expect(toggleSidenav).toBeVisible();
-    await toggleSidenav.click();
-    
+    // await toggleSidenav.click();
+
     await expect(cropStatusFeature).toBeVisible();
     await cropStatusFeature.click();
 
