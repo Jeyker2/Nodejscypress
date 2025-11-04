@@ -1,0 +1,1 @@
+export const REGEX_USER_INTERFACE = 'user.interface.validation';
