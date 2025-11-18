@@ -1,0 +1,10 @@
+# Renombra este archivo a .gitlab-ci.yml para reactivar pipelines
+
+# Para desactivar temporalmente, agrega:
+workflow:
+  rules:
+    - if: $CI_COMMIT_MESSAGE =~ /\[ci skip\]/
+      when: never
+    - when: always
+
+# O comenta todo el contenido del pipeline existente
