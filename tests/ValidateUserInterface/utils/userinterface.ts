@@ -73,6 +73,7 @@ async function validateSideNav() {
   const header = headerSidenav;
   const body = headerSidenav;
 
+  await page.waitForTimeout(5000);
   await expect(header).toBeVisible();
   await expect(header).toMatchAriaSnapshot(`
   - img

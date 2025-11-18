@@ -1,11 +1,12 @@
 const { exec } = require('child_process');
 const cron = require('node-cron');
 
-class TestPipeline {
+class PlaywrightScheduler {
   constructor() {
     this.isRunning = false;
-    this.schedule = process.env.CRON_SCHEDULE || '0 */2 * * *'; // Cada 2 horas por defecto
-    this.timeout = process.env.TEST_TIMEOUT || 30 * 60 * 1000; // 30 minutos
+    this.schedule = process.env.CRON_SCHEDULE || '0 */2 * * *';
+    this.timeout = parseInt(process.env.TEST_TIMEOUT) || 1800000;
+    this.autoShutdown = process.env.AUTO_SHUTDOWN === 'true';
   }
 
   async runTests() {
@@ -15,23 +16,35 @@ class TestPipeline {
     }
 
     this.isRunning = true;
-    console.log(`🚀 Iniciando pipeline de tests - ${new Date().toISOString()}`);
+    const startTime = new Date();
+    console.log(`🚀 Iniciando ValidateUserInterface - ${startTime.toISOString()}`);
 
     try {
       const result = await this.executeTests();
-      console.log('✅ Tests completados exitosamente');
-      console.log(result);
+      const duration = ((new Date() - startTime) / 1000).toFixed(2);
+      console.log(`✅ Tests completados en ${duration}s`);
+      
+      if (this.autoShutdown) {
+        setTimeout(() => process.exit(0), 5000);
+      }
+      
     } catch (error) {
-      console.error('❌ Error en tests:', error);
+      const duration = ((new Date() - startTime) / 1000).toFixed(2);
+      console.error(`❌ Error después de ${duration}s:`, error.message);
+      
+      if (this.autoShutdown) {
+        setTimeout(() => process.exit(1), 5000);
+      }
     } finally {
       this.isRunning = false;
-      console.log(`🏁 Pipeline finalizado - ${new Date().toISOString()}`);
     }
   }
 
   executeTests() {
     return new Promise((resolve, reject) => {
-      const testProcess = exec('npm start', { 
+      const testCommand = 'npx playwright test tests/ValidateUserInterface/index.spec.ts --reporter=line --headed=false';
+      
+      const testProcess = exec(testCommand, { 
         timeout: this.timeout,
         killSignal: 'SIGTERM'
       });
@@ -51,51 +64,34 @@ class TestPipeline {
         if (code === 0) {
           resolve(output);
         } else {
-          reject(new Error(`Tests fallaron con código: ${code}`));
+          reject(new Error(`Playwright test falló con código: ${code}`));
         }
       });
 
       testProcess.on('error', (error) => {
         reject(error);
       });
-
-      // Auto-kill después del timeout
-      setTimeout(() => {
-        if (!testProcess.killed) {
-          console.log('⏰ Timeout alcanzado, terminando tests...');
-          testProcess.kill('SIGTERM');
-        }
-      }, this.timeout);
     });
   }
 
   start() {
-    console.log(`📅 Pipeline programado: ${this.schedule}`);
-    console.log(`⏱️ Timeout por ejecución: ${this.timeout / 1000}s`);
+    console.log(`📅 Programado: ${this.schedule}`);
+    console.log(`🎭 Test TypeScript: ValidateUserInterface/index.spec.ts`);
 
-    // Programar ejecución
     cron.schedule(this.schedule, () => {
       this.runTests();
     });
 
-    // Ejecutar inmediatamente si se especifica
     if (process.env.RUN_IMMEDIATELY === 'true') {
-      this.runTests();
+      setTimeout(() => this.runTests(), 2000);
     }
 
-    console.log('🎯 Pipeline iniciado y programado');
-  }
-
-  stop() {
-    console.log('🛑 Deteniendo pipeline...');
-    process.exit(0);
+    console.log('🎯 PM2 Scheduler iniciado para tests TypeScript');
   }
 }
 
-// Iniciar pipeline
-const pipeline = new TestPipeline();
-pipeline.start();
+const scheduler = new PlaywrightScheduler();
+scheduler.start();
 
-// Manejar señales de cierre
-process.on('SIGINT', () => pipeline.stop());
-process.on('SIGTERM', () => pipeline.stop());
+process.on('SIGINT', () => process.exit(0));
+process.on('SIGTERM', () => process.exit(0));
