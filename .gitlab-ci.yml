@@ -1,85 +1,85 @@
-stages:
-  - install
-  - test
-  - notify
+# stages:
+#   - install
+#   - test
+#   - notify
 
-variables:
-  NODE_VERSION: "18"
-  PLAYWRIGHT_BROWSERS_PATH: "$CI_PROJECT_DIR/playwright-browsers"
+# variables:
+#   NODE_VERSION: "18"
+#   PLAYWRIGHT_BROWSERS_PATH: "$CI_PROJECT_DIR/playwright-browsers"
 
-# Cache para optimizar builds
-cache:
-  key: "$CI_COMMIT_REF_SLUG"
-  paths:
-    - node_modules/
-    - playwright-browsers/
+# # Cache para optimizar builds
+# cache:
+#   key: "$CI_COMMIT_REF_SLUG"
+#   paths:
+#     - node_modules/
+#     - playwright-browsers/
 
-# Instalar dependencias
-install-dependencies:
-  stage: install
-  image: node:18
-  script:
-    - npm ci
-    - npx playwright install --with-deps chromium
-  artifacts:
-    paths:
-      - node_modules/
-      - playwright-browsers/
-    expire_in: 1 hour
+# # Instalar dependencias
+# install-dependencies:
+#   stage: install
+#   image: node:18
+#   script:
+#     - npm ci
+#     - npx playwright install --with-deps chromium
+#   artifacts:
+#     paths:
+#       - node_modules/
+#       - playwright-browsers/
+#     expire_in: 1 hour
 
-# Ejecutar tests principales
-run-playwright-tests:
-  stage: test
-  image: node:18
-  dependencies:
-    - install-dependencies
-  script:
-    - npm start
-  artifacts:
-    when: always
-    paths:
-      - test-results/
-      - playwright-report/
-    expire_in: 7 days
-  only:
-    - main
-    - develop
-    - schedules
+# # Ejecutar tests principales
+# run-playwright-tests:
+#   stage: test
+#   image: node:18
+#   dependencies:
+#     - install-dependencies
+#   script:
+#     - npm start
+#   artifacts:
+#     when: always
+#     paths:
+#       - test-results/
+#       - playwright-report/
+#     expire_in: 7 days
+#   only:
+#     - main
+#     - develop
+#     - schedules
 
-# Ejecutar solo ValidateUserInterface en PRs
-run-ui-tests:
-  stage: test
-  image: node:18
-  dependencies:
-    - install-dependencies
-  script:
-    - npx playwright test tests/ValidateUserInterface/index.spec.ts --reporter=html
-  artifacts:
-    when: always
-    paths:
-      - test-results/
-      - playwright-report/
-    expire_in: 3 days
-  only:
-    - merge_requests
+# # Ejecutar solo ValidateUserInterface en PRs
+# run-ui-tests:
+#   stage: test
+#   image: node:18
+#   dependencies:
+#     - install-dependencies
+#   script:
+#     - npx playwright test tests/ValidateUserInterface/index.spec.ts --reporter=html
+#   artifacts:
+#     when: always
+#     paths:
+#       - test-results/
+#       - playwright-report/
+#     expire_in: 3 days
+#   only:
+#     - merge_requests
 
-# Notificar errores por email
-notify-failure:
-  stage: notify
-  image: alpine:latest
-  before_script:
-    - apk add --no-cache curl
-  script:
-    - |
-      curl -X POST https://formspree.io/f/YOUR_FORM_ID \
-        -H "Content-Type: application/json" \
-        -d "{
-          \"email\": \"juarby.sanguino@auravant.com\",
-          \"subject\": \"❌ Tests Fallaron - Playwright Auravant\",
-          \"message\": \"🚨 Error en Pipeline\\n\\n📅 Fecha: $(date)\\n🌿 Branch: $CI_COMMIT_REF_NAME\\n📝 Commit: $CI_COMMIT_SHA\\n🔗 Pipeline: $CI_PIPELINE_URL\\n\\nRevisa los logs para más detalles.\"
-        }"
-  when: on_failure
-  only:
-    - main
-    - develop
-    - schedules
+# # Notificar errores por email
+# notify-failure:
+#   stage: notify
+#   image: alpine:latest
+#   before_script:
+#     - apk add --no-cache curl
+#   script:
+#     - |
+#       curl -X POST https://formspree.io/f/YOUR_FORM_ID \
+#         -H "Content-Type: application/json" \
+#         -d "{
+#           \"email\": \"juarby.sanguino@auravant.com\",
+#           \"subject\": \"❌ Tests Fallaron - Playwright Auravant\",
+#           \"message\": \"🚨 Error en Pipeline\\n\\n📅 Fecha: $(date)\\n🌿 Branch: $CI_COMMIT_REF_NAME\\n📝 Commit: $CI_COMMIT_SHA\\n🔗 Pipeline: $CI_PIPELINE_URL\\n\\nRevisa los logs para más detalles.\"
+#         }"
+#   when: on_failure
+#   only:
+#     - main
+#     - develop
+#     - schedules
