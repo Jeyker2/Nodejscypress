@@ -1,4 +1,5 @@
 import { Page } from '@playwright/test';
+import { text } from 'stream/consumers';
 
 export function getuserInterfaceElements(page: Page) {
   // Funciones helpers para obtener elementos de la interfaz de usuario
@@ -17,6 +18,9 @@ export function getuserInterfaceElements(page: Page) {
     pageTitle: page.getByRole('heading', { name: 'Título de la página' }),
     // Selector del botón de ayuda
     helpButton: page.getByRole('button', { name: 'Ayuda' }),
+
+    // Carrusel de fechas
+    dateCarousel: page.locator('.dates-selector .days-list .day-list-carousel').first(),
   };
   
 }

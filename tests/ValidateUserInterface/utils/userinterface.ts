@@ -18,7 +18,7 @@ export async function testValidateUserInterface(page: Page, context: BrowserCont
     sameSite: 'Lax'
   }]);
 
-  const { farm, farmName, selectFarm, selectfield, sidenavButton, headerSidenav, pageTitle, helpButton } = getuserInterfaceElements(page);
+  const { farm, farmName, selectFarm, selectfield, sidenavButton, headerSidenav, dateCarousel, pageTitle, helpButton } = getuserInterfaceElements(page);
 
   // Logica para probar la interfaz de usuario
   await page.goto('https://auravant.auravant.com/view');
@@ -32,7 +32,7 @@ export async function testValidateUserInterface(page: Page, context: BrowserCont
   await farmName.fill('adm');
   await clickSelectFarm();
   await clickSelectField();
-  
+  await validateDateCarousel();
 
   // Validaciones filtros Campo/Lote
   async function clickSelectFarm() {
@@ -184,6 +184,68 @@ async function validateSideNav() {
     - text: Reportes de muestreo
     `);
   console.log('✅ Body del Sidenav cargado correctamente');
+}
+
+async function validateDateCarousel() {
+  const today = new Date();
+
+  // Convertir fecha actual a formato YYYY-MM-DD para comparaciones
+  const todayStr = today.toISOString().split('T')[0];
+  const fiveDaysAgo = new Date(today.getTime() - (5 * 24 * 60 * 60 * 1000));
+  const tenDaysAgo = new Date(today.getTime() - (10 * 24 * 60 * 60 * 1000));
+  
+  await page.waitForTimeout(5000);
+  await expect(dateCarousel).toBeVisible();
+  
+  const datesText = await dateCarousel.textContent();
+  
+  // Expresión regular para encontrar patrones: Mes Días Año
+  const regex = /([A-Za-z]{3})\s+([\d\s]+)\s+(\d{4})/g;
+  const matches = [...datesText!.matchAll(regex)]; // Buscar todas las coincidencias del patrón en el texto
+  
+  // Array para almacenar las fechas procesadas
+  const dates = [];
+  // Iterar sobre cada coincidencia encontrada
+  for (const match of matches) {
+    const [, month, daysStr, year] = match;
+    const days = daysStr.trim().match(/\d{2}/g) || [];
+    
+
+    // Procesar cada día encontrado
+    for (const day of days) {
+      const date = new Date(`${month} ${day}, ${year}`);
+      if (!isNaN(date.getTime())) {
+        dates.push(date);
+      }
+    }
+  }
+  
+  // Ordenar fechas de más antigua a más reciente
+  dates.sort((a, b) => a.getTime() - b.getTime());
+
+  // Mostrar lista ordenada
+  // console.log('📅 Lista de fechas ordenadas:');
+  // dates.forEach((date, index) => {
+  //   console.log(`${index + 1}. ${date.toISOString().split('T')[0]} (${date.toLocaleDateString()})`);
+  // });
+  
+  // Validar fecha actual
+  const hasToday = dates.some(date => 
+    date.toISOString().split('T')[0] === todayStr
+  );
+  
+  if (hasToday) {
+    console.log('✅ Fecha actual encontrada en el carrusel');
+  } else {
+    // Validar rango de 5-10 días anteriores
+    const hasValidRange = dates.some(date => 
+      date >= tenDaysAgo && date <= fiveDaysAgo
+    );
+    
+    // Validar que existan fechas en el rango válido
+    expect(hasValidRange, 'Debe tener fechas en rango de 5-10 días anteriores').toBeTruthy();
+    console.log('✅ Fechas válidas en rango de 5-10 días anteriores');
+  }
 }
 
 }
