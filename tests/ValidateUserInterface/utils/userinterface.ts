@@ -234,16 +234,19 @@ async function validateDateCarousel() {
     date.toISOString().split('T')[0] === todayStr
   );
   
+  // Validar rango de 5-10 días anteriores
+  const hasValidRange = dates.some(date => 
+    date >= tenDaysAgo && date <= fiveDaysAgo
+  );
+  
+  // Expect que valida fecha actual O rango válido
+  expect(hasToday || hasValidRange, 
+    'Debe contener fecha actual o fechas en rango de 5-10 días anteriores'
+  ).toBeTruthy();
+  
   if (hasToday) {
-    console.log('✅ Fecha actual encontrada en el carrusel');
+    console.log('✅ Fecha actual encontrada');
   } else {
-    // Validar rango de 5-10 días anteriores
-    const hasValidRange = dates.some(date => 
-      date >= tenDaysAgo && date <= fiveDaysAgo
-    );
-    
-    // Validar que existan fechas en el rango válido
-    expect(hasValidRange, 'Debe tener fechas en rango de 5-10 días anteriores').toBeTruthy();
     console.log('✅ Fechas válidas en rango de 5-10 días anteriores');
   }
 }
