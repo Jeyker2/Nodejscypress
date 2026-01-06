@@ -29,7 +29,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    headless: false, // Ejecutar en modo no headless para ver la UI
+    headless: true, // Ejecutar en modo no headless para ver la UI
     locale: 'es-ES',
     viewport: { width: 1280, height: 720 },
     // timeout: 30000, // Aumentar timeout global a 30 segundos
