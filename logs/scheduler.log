@@ -1,0 +1,1269 @@
+[2025-11-06T18:24:21.941Z] 🚀 Scheduler iniciado: user.interface.validation cada 2h (0 */2 * * *)
+[2025-11-06T18:25:29.462Z] 🛑 Tarea detenida: user.interface.validation-2h
+[2025-11-06T18:25:29.463Z] 🛑 Todos los schedulers detenidos
+[2025-11-06T18:25:49.444Z] 🚀 Scheduler iniciado: user.interface.validation cada 2h (0 */2 * * *)
+[2025-11-06T18:36:35.145Z] 🛑 Tarea detenida: user.interface.validation-2h
+[2025-11-06T18:36:35.155Z] 🛑 Todos los schedulers detenidos
+[2025-11-06T18:38:52.396Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-06T18:39:00.410Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T18:39:02.485Z] ❌ Error en test user.interface.validation: Command failed: npx playwright test -g "user.interface.validation" --project=chromium
+
+[2025-11-06T18:40:00.525Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T18:40:01.543Z] ❌ Error en test user.interface.validation: Command failed: npx playwright test -g "user.interface.validation" --project=chromium
+
+[2025-11-06T18:41:00.608Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T18:41:01.649Z] ❌ Error en test user.interface.validation: Command failed: npx playwright test -g "user.interface.validation" --project=chromium
+
+[2025-11-06T18:42:00.716Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T18:42:01.624Z] ❌ Error en test user.interface.validation: Command failed: npx playwright test -g "user.interface.validation" --project=chromium
+
+[2025-11-06T18:43:00.788Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T18:43:01.772Z] ❌ Error en test user.interface.validation: Command failed: npx playwright test -g "user.interface.validation" --project=chromium
+
+[2025-11-06T18:44:00.866Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T18:44:01.855Z] ❌ Error en test user.interface.validation: Command failed: npx playwright test -g "user.interface.validation" --project=chromium
+
+[2025-11-06T18:44:48.499Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-06T18:44:48.500Z] 🛑 Todos los schedulers detenidos
+[2025-11-06T18:45:08.914Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-06T18:46:00.016Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T18:46:00.935Z] ❌ Error en test user.interface.validation: Command failed: npx playwright test -g "user.interface.validation" --project=webkit
+
+[2025-11-06T18:47:00.101Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T18:47:01.077Z] ❌ Error en test user.interface.validation: Command failed: npx playwright test -g "user.interface.validation" --project=webkit
+
+[2025-11-06T18:48:00.202Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T18:48:01.191Z] ❌ Error en test user.interface.validation: Command failed: npx playwright test -g "user.interface.validation" --project=webkit
+
+[2025-11-06T18:48:15.162Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-06T18:48:15.163Z] 🛑 Todos los schedulers detenidos
+[2025-11-06T18:49:13.899Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-06T18:50:00.968Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T18:50:01.921Z] ❌ Error en test user.interface.validation: Command failed: npx playwright test -g "user.interface.validation" --project=webkit
+
+[2025-11-06T18:51:00.085Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T18:51:01.002Z] ❌ Error en test user.interface.validation: Command failed: npx playwright test -g "user.interface.validation" --project=webkit
+
+[2025-11-06T18:52:00.155Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T18:52:01.882Z] ❌ Error en test user.interface.validation: Command failed: npx playwright test -g "user.interface.validation" --project=webkit
+
+[2025-11-06T18:52:43.422Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-06T18:52:43.423Z] 🛑 Todos los schedulers detenidos
+[2025-11-06T18:52:55.631Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-06T18:53:00.640Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T18:53:01.548Z] ❌ Error en test user.interface.validation: Command failed: npx playwright test -g "user.interface.validation" --project=webkit
+
+[2025-11-06T18:53:23.476Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-06T18:54:00.516Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T18:54:00.710Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T18:54:01.553Z] ❌ Error en test user.interface.validation: Command failed: npx playwright test -g "user.interface.validation" --project=webkit
+
+[2025-11-06T18:54:01.553Z] ❌ Error en test user.interface.validation: Command failed: npx playwright test -g "user.interface.validation" --project=webkit
+
+[2025-11-06T18:54:18.605Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-06T18:54:18.606Z] 🛑 Todos los schedulers detenidos
+[2025-11-06T18:54:18.727Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-06T18:54:18.728Z] 🛑 Todos los schedulers detenidos
+[2025-11-06T19:11:15.451Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-06T19:12:00.522Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:13:00.570Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:13:24.519Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-06T19:13:24.521Z] 🛑 Todos los schedulers detenidos
+[2025-11-06T19:17:45.507Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-06T19:18:00.536Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:19:00.764Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:19:01.622Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-06T19:19:01.622Z] 🛑 Todos los schedulers detenidos
+[2025-11-06T19:22:16.635Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-06T19:23:00.716Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:23:16.798Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:24:00.799Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:24:16.598Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:24:40.259Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-06T19:24:40.262Z] 🛑 Todos los schedulers detenidos
+[2025-11-06T19:28:33.514Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-06T19:29:00.546Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:29:20.048Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:30:00.642Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:30:15.667Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:31:00.763Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:31:16.102Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:32:00.935Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:32:15.672Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:33:00.159Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:33:16.292Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:34:00.370Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:35:00.679Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:35:24.248Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:36:00.156Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:36:15.709Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:37:00.321Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:37:19.725Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:38:00.803Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:38:19.213Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:38:48.670Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-06T19:38:48.671Z] 🛑 Todos los schedulers detenidos
+[2025-11-06T19:38:55.265Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-06T19:39:00.274Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:39:00.275Z] 🔧 Comando a ejecutar: npx playwright test tests/ValidateUserInterface/index.spec.ts --project=webkit --reporter=line
+[2025-11-06T19:39:17.550Z] 📋 Salida del test:
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[1A[2K[webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+✅ Botón de Sidenav visible
+
+[1A[2K✅ Header del Sidenav cargado correctamente
+
+[1A[2K✅ Body del Sidenav cargado correctamente
+
+[1A[2Kuser.interface.validation ejecutado en: webkit
+
+[1A[2K  1 passed (16.4s)
+
+[2025-11-06T19:39:17.550Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:40:00.396Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:40:00.398Z] 🔧 Comando a ejecutar: npx playwright test tests/ValidateUserInterface/index.spec.ts --project=webkit --reporter=line
+[2025-11-06T19:40:15.907Z] 📋 Salida del test:
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[1A[2K[webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+✅ Botón de Sidenav visible
+
+[1A[2K✅ Header del Sidenav cargado correctamente
+
+[1A[2K✅ Body del Sidenav cargado correctamente
+
+[1A[2Kuser.interface.validation ejecutado en: webkit
+
+[1A[2K  1 passed (14.6s)
+
+[2025-11-06T19:40:15.908Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:41:00.530Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:41:00.532Z] 🔧 Comando a ejecutar: npx playwright test tests/ValidateUserInterface/index.spec.ts --project=webkit --reporter=line
+[2025-11-06T19:41:22.953Z] 📋 Salida del test:
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[1A[2K[webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+✅ Botón de Sidenav visible
+
+[1A[2K✅ Header del Sidenav cargado correctamente
+
+[1A[2K✅ Body del Sidenav cargado correctamente
+
+[1A[2Kuser.interface.validation ejecutado en: webkit
+
+[1A[2K  1 passed (21.4s)
+
+[2025-11-06T19:41:22.954Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:42:00.292Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:42:00.294Z] 🔧 Comando a ejecutar: npx playwright test tests/ValidateUserInterface/index.spec.ts --project=webkit --reporter=line
+[2025-11-06T19:42:14.915Z] 📋 Salida del test:
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[1A[2K[webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+✅ Botón de Sidenav visible
+
+[1A[2K✅ Header del Sidenav cargado correctamente
+
+[1A[2K✅ Body del Sidenav cargado correctamente
+
+[1A[2Kuser.interface.validation ejecutado en: webkit
+
+[1A[2K  1 passed (13.7s)
+
+[2025-11-06T19:42:14.915Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:43:00.457Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:43:00.459Z] 🔧 Comando a ejecutar: npx playwright test tests/ValidateUserInterface/index.spec.ts --project=webkit --reporter=line
+[2025-11-06T19:43:22.945Z] 📋 Salida del test:
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[1A[2K[webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+✅ Botón de Sidenav visible
+
+[1A[2K✅ Header del Sidenav cargado correctamente
+
+[1A[2K✅ Body del Sidenav cargado correctamente
+
+[1A[2Kuser.interface.validation ejecutado en: webkit
+
+[1A[2K  1 passed (21.5s)
+
+[2025-11-06T19:43:22.946Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:43:52.974Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-06T19:43:52.975Z] 🛑 Todos los schedulers detenidos
+[2025-11-06T19:46:49.321Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-06T19:47:00.332Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:47:00.333Z] 🔧 Comando a ejecutar: npx playwright test tests/ValidateUserInterface/index.spec.ts --project=webkit --reporter=line
+[2025-11-06T19:47:16.586Z] 📋 Salida del test:
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[1A[2K[webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+✅ Botón de Sidenav visible
+
+[1A[2K✅ Header del Sidenav cargado correctamente
+
+[1A[2K✅ Body del Sidenav cargado correctamente
+
+[1A[2Kuser.interface.validation ejecutado en: webkit
+
+[1A[2K  1 passed (15.2s)
+
+[2025-11-06T19:47:16.587Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:48:00.409Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:48:00.413Z] 🔧 Comando a ejecutar: npx playwright test tests/ValidateUserInterface/index.spec.ts --project=webkit --reporter=line
+[2025-11-06T19:48:15.793Z] 📋 Salida del test:
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[1A[2K[webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+✅ Botón de Sidenav visible
+
+[1A[2K✅ Header del Sidenav cargado correctamente
+
+[1A[2K✅ Body del Sidenav cargado correctamente
+
+[1A[2Kuser.interface.validation ejecutado en: webkit
+
+[1A[2K  1 passed (14.5s)
+
+[2025-11-06T19:48:15.794Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:49:00.517Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:49:00.519Z] 🔧 Comando a ejecutar: npx playwright test tests/ValidateUserInterface/index.spec.ts --project=webkit --reporter=line
+[2025-11-06T19:49:15.946Z] 📋 Salida del test:
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[1A[2K[webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+✅ Botón de Sidenav visible
+
+[1A[2K✅ Header del Sidenav cargado correctamente
+
+[1A[2K✅ Body del Sidenav cargado correctamente
+
+[1A[2Kuser.interface.validation ejecutado en: webkit
+
+[1A[2K  1 passed (14.5s)
+
+[2025-11-06T19:49:15.947Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:50:00.587Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:50:00.590Z] 🔧 Comando a ejecutar: npx playwright test tests/ValidateUserInterface/index.spec.ts --project=webkit --reporter=line
+[2025-11-06T19:50:18.548Z] 📋 Salida del test:
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[1A[2K[webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+✅ Botón de Sidenav visible
+
+[1A[2K✅ Header del Sidenav cargado correctamente
+
+[1A[2K✅ Body del Sidenav cargado correctamente
+
+[1A[2Kuser.interface.validation ejecutado en: webkit
+
+[1A[2K  1 passed (17.0s)
+
+[2025-11-06T19:50:18.549Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:50:52.485Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-06T19:50:52.486Z] 🛑 Todos los schedulers detenidos
+[2025-11-06T19:50:56.097Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-06T19:51:00.103Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:51:00.103Z] 🔧 Comando a ejecutar: npx playwright test tests/ValidateUserInterface/index.spec.ts --project=webkit --reporter=line
+[2025-11-06T19:51:21.475Z] 📋 Salida del test:
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[1A[2K[webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+✅ Botón de Sidenav visible
+
+[1A[2K✅ Header del Sidenav cargado correctamente
+
+[1A[2K✅ Body del Sidenav cargado correctamente
+
+[1A[2Kuser.interface.validation ejecutado en: webkit
+
+[1A[2K  1 passed (20.4s)
+
+[2025-11-06T19:51:21.475Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:52:00.756Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:52:00.759Z] 🔧 Comando a ejecutar: npx playwright test tests/ValidateUserInterface/index.spec.ts --project=webkit --reporter=line
+[2025-11-06T19:52:18.630Z] 📋 Salida del test:
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[1A[2K[webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+✅ Botón de Sidenav visible
+
+[1A[2K✅ Header del Sidenav cargado correctamente
+
+[1A[2K✅ Body del Sidenav cargado correctamente
+
+[1A[2Kuser.interface.validation ejecutado en: webkit
+
+[1A[2K  1 passed (16.9s)
+
+[2025-11-06T19:52:18.631Z] ✅ Test user.interface.validation completado exitosamente
+[2025-11-06T19:53:00.863Z] ▶️ Ejecutando test: user.interface.validation
+[2025-11-06T19:53:00.864Z] 🔧 Comando a ejecutar: npx playwright test tests/ValidateUserInterface/index.spec.ts --project=webkit --reporter=line
+[2025-11-06T19:53:13.110Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-06T19:53:13.120Z] 🛑 Todos los schedulers detenidos
+[2025-11-06T19:57:16.981Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-06T19:58:00.041Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-06T19:58:11.248Z] ✅ Botón de Sidenav visible
+[2025-11-06T19:59:00.150Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-06T19:59:10.207Z] ✅ Botón de Sidenav visible
+[2025-11-06T19:59:15.288Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-06T19:59:15.319Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-06T19:59:22.492Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-06T19:59:22.596Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-06T20:00:00.269Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-06T20:00:11.558Z] ✅ Botón de Sidenav visible
+[2025-11-06T20:00:15.629Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-06T20:00:15.646Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-06T20:00:20.881Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-06T20:00:20.988Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-06T20:01:00.411Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-06T20:01:01.197Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-06T20:01:01.198Z] 🛑 Todos los schedulers detenidos
+[2025-11-06T20:01:01.418Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-06T20:02:00.485Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-06T20:02:11.072Z] ✅ Botón de Sidenav visible
+[2025-11-06T20:02:14.209Z] ✅ Header del Sidenav cargado correctamente
+[2025-11-06T20:02:14.228Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-06T20:02:15.147Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-06T20:02:15.279Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-06T20:03:00.655Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-06T20:03:14.849Z] ✅ Botón de Sidenav visible
+[2025-11-06T20:03:19.147Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-06T20:03:19.173Z] ✅ Body del Sidenav cargado correctamente
+[2025-11-06T20:03:23.826Z] user.interface.validation ejecutado en: webkit
+[2025-11-06T20:03:24.106Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-06T20:04:00.477Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-06T20:04:11.531Z] ✅ Botón de Sidenav visible
+[2025-11-06T20:04:15.549Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-06T20:04:15.598Z] ✅ Body del Sidenav cargado correctamente
+[2025-11-06T20:04:16.845Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-06T20:04:17.000Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-06T20:04:31.108Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-06T20:04:31.109Z] 🛑 Todos los schedulers detenidos
+[2025-11-10T18:05:12.940Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-10T18:06:00.012Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:06:11.203Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:06:14.227Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:06:14.249Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:06:15.682Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-10T18:06:15.903Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:07:00.100Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:07:11.330Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:07:14.396Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:07:14.418Z] ✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:07:16.532Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-10T18:07:16.648Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:08:00.197Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:08:10.820Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:08:12.787Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:08:12.810Z] ✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:08:15.055Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-10T18:08:15.321Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:09:00.358Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:09:10.321Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:09:13.302Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:09:13.329Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:09:20.948Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-10T18:09:21.811Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:10:00.355Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:10:09.569Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:10:12.665Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:10:12.682Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:10:13.471Z] user.interface.validation ejecutado en: webkit
+[2025-11-10T18:10:13.569Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:11:00.427Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:11:09.434Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:11:11.581Z] ✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:11:11.620Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:11:14.218Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-10T18:11:14.399Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:12:00.499Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:12:11.081Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:12:13.090Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:12:13.114Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:12:15.290Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-10T18:12:15.472Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:13:00.582Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:13:10.656Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:13:13.732Z] ✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:13:13.759Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:13:14.915Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-10T18:13:15.004Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:14:00.825Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:14:07.506Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-10T18:14:07.508Z] 🛑 Todos los schedulers detenidos
+[2025-11-10T18:14:15.268Z] 🛑 Todos los schedulers detenidos
+[2025-11-10T18:15:17.125Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-10T18:16:00.184Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:16:09.896Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:16:13.910Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:16:13.937Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:16:16.045Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-10T18:16:16.132Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:16:59.771Z] 🚀 Scheduler iniciado: user.interface.validation cada 2h (0 */2 * * *)
+[2025-11-10T18:17:00.256Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:17:09.210Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:17:12.172Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:17:12.200Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:17:16.327Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-10T18:17:16.394Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:18:00.329Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:18:09.230Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:18:12.276Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:18:12.291Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:18:15.557Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-10T18:18:15.702Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:19:00.399Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:19:09.312Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:19:12.369Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:19:12.396Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:19:13.509Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-10T18:19:13.594Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:20:00.483Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:20:10.407Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:20:13.475Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:20:13.491Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:20:14.013Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-10T18:20:14.093Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:21:00.572Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:21:09.612Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:21:13.739Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:21:13.767Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:21:16.177Z] user.interface.validation ejecutado en: webkit
+[2025-11-10T18:21:16.251Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:22:00.757Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:22:11.208Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:22:14.202Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:22:14.237Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:22:15.093Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-10T18:22:15.188Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:23:00.833Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:23:09.805Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:23:12.894Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:23:12.919Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:23:15.019Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-10T18:23:15.098Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:24:00.908Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:24:10.063Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:24:14.055Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:24:14.079Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:24:16.305Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-10T18:24:16.812Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:25:00.983Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:25:09.879Z] ✅ Botón de Sidenav visible
+[2025-11-10T18:25:12.879Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-10T18:25:12.908Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-10T18:25:15.034Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-10T18:25:15.117Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-10T18:26:00.103Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T18:26:03.191Z] 🛑 Tarea detenida: user.interface.validation-2h
+[2025-11-10T18:26:03.192Z] 🛑 Todos los schedulers detenidos
+[2025-11-10T18:26:03.268Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-10T18:26:03.269Z] 🛑 Todos los schedulers detenidos
+[2025-11-10T18:26:59.457Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+[2025-11-10T19:00:00.278Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-10T19:00:10.958Z] ✅ Botón de Sidenav visible
+[2025-11-10T19:03:08.173Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+[2025-11-10T19:17:17.508Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-10T19:17:17.521Z] 🛑 Todos los schedulers detenidos
+[2025-11-10T19:17:17.560Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-10T19:17:17.566Z] 🛑 Todos los schedulers detenidos
+[2025-11-10T19:17:30.584Z] 🚀 Scheduler iniciado: test-inexistente cada 1m (* * * * *)
+[2025-11-10T19:20:38.886Z] 🛑 Tarea detenida: test-inexistente-1m
+[2025-11-10T19:20:38.887Z] 🛑 Todos los schedulers detenidos
+[2025-11-10T19:21:58.404Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+[2025-11-10T19:23:56.753Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+[2025-11-10T19:26:44.040Z] 🚀 Scheduler iniciado: test-inexistente cada 1m (* * * * *)
+[2025-11-10T19:30:07.463Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-10T19:30:07.465Z] 🛑 Todos los schedulers detenidos
+[2025-11-10T19:30:07.463Z] 🛑 Tarea detenida: test-inexistente-1m
+[2025-11-10T19:30:07.466Z] 🛑 Todos los schedulers detenidos
+[2025-11-10T19:30:07.587Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-10T19:30:07.598Z] 🛑 Todos los schedulers detenidos
+[2025-11-10T19:31:31.175Z] 🚀 Scheduler iniciado: auraview.histogram cada 1m (* * * * *)
+[2025-11-10T19:35:52.298Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-10T19:38:08.844Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-10T19:38:08.845Z] 🛑 Todos los schedulers detenidos
+[2025-11-10T19:38:08.844Z] 🛑 Tarea detenida: auraview.histogram-1m
+[2025-11-10T19:38:08.851Z] 🛑 Todos los schedulers detenidos
+[2025-11-10T19:38:48.328Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-10T19:39:03.230Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-10T19:39:03.231Z] 🛑 Todos los schedulers detenidos
+[2025-11-10T19:39:03.468Z] 🚀 Scheduler iniciado: test-inexistente cada 1m (* * * * *)
+[2025-11-10T19:49:32.628Z] 🛑 Tarea detenida: test-inexistente-1m
+[2025-11-10T19:49:32.635Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T13:04:24.658Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-11T13:06:24.722Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-11T13:06:24.725Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T13:48:13.046Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-11T13:49:00.114Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T13:49:10.130Z] ✅ Botón de Sidenav visible
+[2025-11-11T13:50:00.190Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T13:50:11.292Z] ✅ Botón de Sidenav visible
+[2025-11-11T13:50:16.400Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T13:50:16.472Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T13:51:00.287Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T13:51:10.355Z] ✅ Botón de Sidenav visible
+[2025-11-11T13:51:14.395Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T13:51:14.420Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T13:51:24.670Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T13:51:24.749Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T13:52:00.363Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T13:52:10.588Z] ✅ Botón de Sidenav visible
+[2025-11-11T13:53:00.742Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T13:53:13.911Z] Expected: visible
+[2025-11-11T13:53:13.911Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-11T13:54:00.813Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T13:54:13.413Z] ✅ Botón de Sidenav visible
+[2025-11-11T13:55:00.967Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T13:55:11.156Z] ✅ Botón de Sidenav visible
+[2025-11-11T13:55:15.582Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T13:55:15.606Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T13:55:19.737Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T13:55:20.138Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T13:56:00.185Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T13:56:09.252Z] ✅ Botón de Sidenav visible
+[2025-11-11T13:56:13.244Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T13:56:13.265Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T13:56:17.647Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T13:56:17.741Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T13:57:00.312Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T13:57:09.202Z] ✅ Botón de Sidenav visible
+[2025-11-11T13:57:13.231Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T13:57:13.249Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T13:57:19.465Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T13:57:19.551Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T13:58:00.382Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T13:58:09.275Z] ✅ Botón de Sidenav visible
+[2025-11-11T13:58:12.358Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T13:58:12.388Z] ✅ Body del Sidenav cargado correctamente
+[2025-11-11T13:58:20.868Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T13:58:21.367Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T13:59:00.796Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T13:59:09.780Z] ✅ Botón de Sidenav visible
+[2025-11-11T13:59:12.940Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T13:59:12.956Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T13:59:17.165Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T13:59:17.322Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T14:00:00.878Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T14:00:10.816Z] ✅ Botón de Sidenav visible
+[2025-11-11T14:00:13.842Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T14:00:13.869Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T14:00:18.051Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T14:00:18.150Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T14:00:19.130Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-11T14:00:19.132Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T14:03:38.014Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-11T14:03:45.981Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-11T14:03:45.981Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T14:03:53.707Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+[2025-11-11T14:04:00.823Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T14:04:00.824Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T15:17:59.098Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+[2025-11-11T15:19:58.433Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T15:19:58.435Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T15:19:58.680Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+[2025-11-11T15:21:49.222Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T15:21:49.225Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T15:21:49.483Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+[2025-11-11T15:21:58.318Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T15:21:58.319Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T15:21:58.533Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+[2025-11-11T15:22:58.318Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+[2025-11-11T15:30:37.816Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T15:30:37.829Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T15:30:38.045Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+[2025-11-11T15:32:46.566Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T15:32:46.567Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T15:34:45.646Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-11T15:35:00.668Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T15:35:12.871Z] ✅ Botón de Sidenav visible
+[2025-11-11T15:35:15.854Z] ✅ Header del Sidenav cargado correctamente
+[2025-11-11T15:35:15.875Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T15:35:18.859Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T15:35:19.124Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T15:36:00.794Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T15:36:14.135Z] Expected: visible
+[2025-11-11T15:36:14.136Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-11T15:37:00.892Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T15:37:11.993Z] ✅ Botón de Sidenav visible
+[2025-11-11T15:37:15.962Z] ✅ Header del Sidenav cargado correctamente
+[2025-11-11T15:37:15.990Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T15:37:21.445Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T15:37:21.584Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T15:38:00.409Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T15:38:09.580Z] ✅ Botón de Sidenav visible
+[2025-11-11T15:38:13.585Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T15:38:13.608Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T15:38:18.000Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T15:38:18.341Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T15:39:00.691Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T15:39:10.156Z] ✅ Botón de Sidenav visible
+[2025-11-11T15:39:13.218Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T15:39:13.245Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T15:39:18.586Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T15:39:18.764Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T15:40:00.771Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T15:40:11.831Z] ✅ Botón de Sidenav visible
+[2025-11-11T15:40:15.913Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T15:40:15.942Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T15:40:18.153Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T15:40:18.446Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T15:41:00.815Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T15:41:12.845Z] ✅ Botón de Sidenav visible
+[2025-11-11T15:41:15.821Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T15:41:15.837Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T15:41:22.199Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T15:41:22.348Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T15:41:36.211Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-11T15:41:36.215Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T15:42:23.188Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-11T15:43:00.257Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T15:43:09.545Z] ✅ Botón de Sidenav visible
+[2025-11-11T15:43:12.767Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T15:43:12.782Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T15:43:17.989Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T15:43:18.319Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T15:44:00.373Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T15:44:11.605Z] ✅ Botón de Sidenav visible
+[2025-11-11T15:45:00.564Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T15:45:10.790Z] ✅ Botón de Sidenav visible
+[2025-11-11T15:45:12.776Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T15:45:12.801Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T15:45:17.432Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T15:45:17.727Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T15:45:42.174Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-11T15:45:42.178Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T16:00:00.291Z] 🛑 Deteniendo scheduler por archivo de control
+[2025-11-11T16:00:00.305Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T16:00:00.305Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T17:00:00.696Z] 🛑 Deteniendo scheduler por archivo de control
+[2025-11-11T17:00:00.718Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T17:22:06.823Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-11T17:22:54.231Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T17:23:00.048Z] 🛑 Deteniendo scheduler por archivo de control
+[2025-11-11T17:23:00.049Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-11T17:23:00.049Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T17:23:12.490Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+[2025-11-11T17:23:55.234Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T17:23:55.237Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T17:23:55.510Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+[2025-11-11T17:24:00.119Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T17:24:17.586Z] Expected: visible
+[2025-11-11T17:24:17.587Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-11T17:24:55.526Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T17:25:26.891Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-11T17:26:00.934Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T17:26:11.747Z] ✅ Botón de Sidenav visible
+[2025-11-11T17:26:16.723Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T17:26:16.740Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T17:26:26.053Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T17:26:26.234Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T17:27:00.040Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T17:27:11.318Z] ✅ Botón de Sidenav visible
+[2025-11-11T17:27:14.271Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T17:27:14.305Z] ✅ Body del Sidenav cargado correctamente
+[2025-11-11T17:27:18.810Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T17:27:19.126Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T17:28:00.267Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T17:28:09.622Z] ✅ Botón de Sidenav visible
+[2025-11-11T17:28:11.742Z] ✅ Header del Sidenav cargado correctamente
+[2025-11-11T17:28:11.767Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T17:28:20.278Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T17:28:20.872Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T17:28:29.881Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-11T17:28:29.882Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T17:29:31.992Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-11T17:30:00.047Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T17:30:09.789Z] ✅ Botón de Sidenav visible
+[2025-11-11T17:30:13.779Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T17:30:13.795Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T17:30:17.441Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T17:30:17.837Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T17:31:00.146Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T17:31:10.906Z] ✅ Botón de Sidenav visible
+[2025-11-11T17:31:13.899Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T17:31:13.919Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T17:31:18.211Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T17:31:18.333Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T17:32:00.622Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T17:32:10.709Z] ✅ Botón de Sidenav visible
+[2025-11-11T17:32:14.959Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T17:32:14.980Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T17:32:18.361Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T17:32:18.483Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T17:33:00.750Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T17:33:10.310Z] ✅ Botón de Sidenav visible
+[2025-11-11T17:33:13.450Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T17:33:13.474Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T17:33:14.871Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T17:33:14.954Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T17:34:00.828Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T17:34:10.294Z] ✅ Botón de Sidenav visible
+[2025-11-11T17:34:12.456Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T17:34:12.475Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T17:34:16.671Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T17:34:16.746Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T17:34:58.372Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T17:34:58.383Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T17:34:58.709Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+[2025-11-11T17:35:00.906Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T17:35:10.050Z] ✅ Botón de Sidenav visible
+[2025-11-11T17:35:13.611Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T17:35:13.641Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T17:35:16.785Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T17:35:16.877Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T17:36:00.991Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T17:36:11.915Z] ✅ Botón de Sidenav visible
+[2025-11-11T17:36:14.921Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T17:36:14.946Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T17:36:18.282Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T17:36:18.380Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T17:37:00.136Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T17:37:12.285Z] ✅ Botón de Sidenav visible
+[2025-11-11T17:37:15.359Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T17:37:15.385Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T17:37:17.536Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T17:37:17.618Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T17:38:00.200Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T17:38:09.722Z] ✅ Botón de Sidenav visible
+[2025-11-11T17:38:12.746Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T17:38:12.770Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T17:38:15.866Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T17:38:15.951Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T17:39:00.307Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T17:39:09.247Z] ✅ Botón de Sidenav visible
+[2025-11-11T17:39:13.261Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-11T17:39:13.289Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-11T17:39:17.731Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-11T17:39:17.847Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-11T17:40:00.523Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-11T17:40:12.797Z] ✅ Botón de Sidenav visible
+[2025-11-11T17:40:37.723Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T17:40:37.737Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T17:40:37.886Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-11T17:40:37.886Z] 🛑 Todos los schedulers detenidos
+[2025-11-11T17:56:45.407Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+[2025-11-11T18:00:00.869Z] ▶️ Ejecutando test: user.interface.validation en chromium
+[2025-11-11T18:00:14.260Z] Expected: visible
+[2025-11-11T18:00:14.261Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-11T18:02:38.714Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T18:02:38.716Z] 🛑 Todos los schedulers detenidos
+[2025-11-12T18:50:26.397Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-12T18:51:00.457Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T18:51:14.644Z] ✅ Botón de Sidenav visible
+[2025-11-12T18:51:17.803Z] ✅ Header del Sidenav cargado correctamente
+[2025-11-12T18:51:17.821Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T18:51:18.265Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T18:51:18.422Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T18:52:00.806Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T18:52:10.788Z] ✅ Botón de Sidenav visible
+[2025-11-12T18:52:13.803Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T18:52:13.829Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T18:52:19.106Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T18:52:19.212Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T18:53:00.963Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T18:53:10.931Z] ✅ Botón de Sidenav visible
+[2025-11-12T18:53:13.931Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T18:53:13.958Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T18:53:15.557Z] user.interface.validation ejecutado en: webkit
+[2025-11-12T18:53:15.672Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T18:54:00.062Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T18:54:10.076Z] ✅ Botón de Sidenav visible
+[2025-11-12T18:54:14.117Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T18:54:14.142Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T18:54:17.482Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T18:54:17.620Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T18:54:22.225Z] 🛑 Todos los schedulers detenidos
+[2025-11-12T18:54:30.837Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-12T18:54:30.837Z] 🛑 Todos los schedulers detenidos
+[2025-11-12T18:56:09.278Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+[2025-11-12T18:58:07.739Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-12T18:58:07.740Z] 🛑 Todos los schedulers detenidos
+[2025-11-12T18:59:04.164Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+[2025-11-12T19:00:00.223Z] ▶️ Ejecutando test: user.interface.validation en chromium
+[2025-11-12T19:00:14.686Z] Expected: visible
+[2025-11-12T19:00:14.688Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-12T19:05:14.215Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-12T19:05:14.218Z] 🛑 Todos los schedulers detenidos
+[2025-11-12T19:26:38.309Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-12T19:27:00.334Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:27:13.837Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:27:18.120Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:27:18.154Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:27:23.474Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T19:27:23.669Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:27:51.447Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-12T19:27:51.448Z] 🛑 Todos los schedulers detenidos
+[2025-11-12T19:28:01.846Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-12T19:28:42.146Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-12T19:29:00.166Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:29:00.923Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:29:11.464Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:29:11.594Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:29:13.563Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:29:13.576Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:29:14.744Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:29:14.778Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:29:18.819Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T19:29:18.964Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:29:20.022Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T19:29:20.102Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:30:00.010Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:30:00.236Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:30:11.494Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:30:11.501Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:30:13.594Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-12T19:30:15.007Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:30:15.011Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:30:15.061Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:30:15.067Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:30:18.656Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T19:30:18.751Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:30:22.456Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T19:30:22.557Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:31:00.118Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:31:00.320Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:31:00.765Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:31:11.376Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:31:12.387Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:31:12.436Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:31:15.053Z] ✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:31:15.164Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:31:16.067Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:31:16.107Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:31:28.342Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T19:31:28.462Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:31:30.264Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T19:31:30.441Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:32:00.029Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:32:00.124Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:32:00.254Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:32:12.271Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:32:12.335Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:32:12.375Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:32:16.223Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:32:16.237Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:32:16.679Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:32:16.716Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:32:17.131Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:32:17.231Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:32:22.328Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T19:32:22.504Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T19:32:22.594Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:32:22.633Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:32:23.651Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T19:32:23.728Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:33:00.131Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:33:00.201Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:33:00.380Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:33:13.582Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:33:13.710Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:33:13.744Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:33:17.082Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:33:17.099Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:33:25.366Z] user.interface.validation ejecutado en: webkit
+[2025-11-12T19:33:25.477Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:34:00.268Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:34:00.496Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:34:00.518Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:34:11.120Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:34:12.094Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:34:12.094Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:34:16.152Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:34:16.169Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:34:17.328Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:34:17.348Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:34:19.457Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T19:34:19.545Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:34:58.270Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-12T19:34:58.272Z] 🛑 Todos los schedulers detenidos
+[2025-11-12T19:34:58.274Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-12T19:34:58.276Z] 🛑 Todos los schedulers detenidos
+[2025-11-12T19:34:58.446Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-12T19:34:58.447Z] 🛑 Todos los schedulers detenidos
+[2025-11-12T19:46:25.062Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-12T19:47:00.128Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:47:15.887Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:47:18.880Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:47:18.907Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:47:23.009Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T19:47:23.110Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:47:36.408Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-12T19:48:00.176Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:48:00.435Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:48:10.376Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:48:11.428Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:48:16.020Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:48:16.143Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:48:29.454Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T19:48:29.538Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:49:00.476Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:49:00.669Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:49:10.699Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:49:11.738Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:49:14.679Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:49:14.707Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:49:14.723Z] ✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:49:14.757Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:49:21.103Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T19:49:21.227Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:49:24.922Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T19:49:24.997Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:49:58.385Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-12T19:49:58.386Z] 🛑 Todos los schedulers detenidos
+[2025-11-12T19:49:58.439Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-12T19:49:58.439Z] 🛑 Todos los schedulers detenidos
+[2025-11-13T11:44:23.977Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-13T11:45:00.032Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-13T11:45:01.389Z] [1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:45:17.051Z] 1) [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:45:17.051Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:45:17.051Z] Expected: visible
+[2025-11-13T11:45:17.052Z] Error: element(s) not found
+[2025-11-13T11:45:17.052Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:45:17.052Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:45:17.062Z] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ───────────
+[2025-11-13T11:45:17.076Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:46:00.119Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-13T11:46:00.995Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-13T11:46:01.390Z] [1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:46:13.260Z] 1) [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:46:13.261Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:46:13.261Z] Expected: visible
+[2025-11-13T11:46:13.261Z] Error: element(s) not found
+[2025-11-13T11:46:13.262Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:46:13.262Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:46:13.276Z] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ───────────
+[2025-11-13T11:46:13.294Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:47:00.114Z] ▶️ Ejecutando test: user.interface.validation en chromiun
+[2025-11-13T11:47:00.197Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-13T11:47:01.952Z] ⚠️ Error: Project(s) "chromiun" not found. Available projects: "chromium", "firefox", "webkit"
+[2025-11-13T11:47:01.953Z] ⚠️ at filterProjects (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/runner/projectUtils.js:80:11)
+[2025-11-13T11:47:01.953Z] ⚠️ at runTests (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:217:42)
+[2025-11-13T11:47:01.953Z] ⚠️ at i.<anonymous> (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:71:7)
+[2025-11-13T11:47:01.963Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:47:02.367Z] [1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:47:08.881Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-13T11:47:15.578Z] 1) [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:47:15.579Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:47:15.579Z] Expected: visible
+[2025-11-13T11:47:15.580Z] Error: element(s) not found
+[2025-11-13T11:47:15.580Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:47:15.580Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:47:15.589Z] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ───────────
+[2025-11-13T11:47:15.608Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:48:00.198Z] ▶️ Ejecutando test: user.interface.validation en chromiun
+[2025-11-13T11:48:00.278Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-13T11:48:00.950Z] ▶️ Ejecutando test: user.interface.validation en firefox
+[2025-11-13T11:48:01.127Z] ⚠️ Error: Project(s) "chromiun" not found. Available projects: "chromium", "firefox", "webkit"
+[2025-11-13T11:48:01.128Z] ⚠️ at filterProjects (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/runner/projectUtils.js:80:11)
+[2025-11-13T11:48:01.128Z] ⚠️ at runTests (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:217:42)
+[2025-11-13T11:48:01.129Z] ⚠️ at i.<anonymous> (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:71:7)
+[2025-11-13T11:48:01.139Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:48:01.477Z] [1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:48:02.069Z] [1A[2K[1/1] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:48:16.500Z] 1) [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:48:16.500Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:48:16.501Z] Expected: visible
+[2025-11-13T11:48:16.501Z] Error: element(s) not found
+[2025-11-13T11:48:16.501Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:48:16.501Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:48:16.508Z] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ───────────
+[2025-11-13T11:48:16.521Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:48:19.073Z] 1) [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ─────────
+[2025-11-13T11:48:19.074Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:48:19.074Z] Expected: visible
+[2025-11-13T11:48:19.074Z] Error: element(s) not found
+[2025-11-13T11:48:19.074Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:48:19.075Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:48:19.080Z] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:48:19.091Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:49:00.117Z] ▶️ Ejecutando test: user.interface.validation en firefox
+[2025-11-13T11:49:00.303Z] ▶️ Ejecutando test: user.interface.validation en chromiun
+[2025-11-13T11:49:00.380Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-13T11:49:01.073Z] ⚠️ Error: Project(s) "chromiun" not found. Available projects: "chromium", "firefox", "webkit"
+[2025-11-13T11:49:01.073Z] ⚠️ at filterProjects (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/runner/projectUtils.js:80:11)
+[2025-11-13T11:49:01.073Z] ⚠️ at runTests (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:217:42)
+[2025-11-13T11:49:01.073Z] ⚠️ at i.<anonymous> (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:71:7)
+[2025-11-13T11:49:01.083Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:49:01.412Z] [1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:49:01.421Z] [1A[2K[1/1] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:49:16.425Z] 1) [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ─────────
+[2025-11-13T11:49:16.426Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:49:16.426Z] Expected: visible
+[2025-11-13T11:49:16.426Z] Error: element(s) not found
+[2025-11-13T11:49:16.426Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:49:16.426Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:49:16.436Z] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:49:16.453Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:49:18.224Z] 1) [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:49:18.224Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:49:18.225Z] Expected: visible
+[2025-11-13T11:49:18.225Z] Error: element(s) not found
+[2025-11-13T11:49:18.225Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:49:18.225Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:49:18.237Z] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ───────────
+[2025-11-13T11:49:18.255Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:50:00.227Z] ▶️ Ejecutando test: user.interface.validation en firefox
+[2025-11-13T11:50:00.472Z] ▶️ Ejecutando test: user.interface.validation en chromiun
+[2025-11-13T11:50:00.483Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-13T11:50:01.154Z] ⚠️ Error: Project(s) "chromiun" not found. Available projects: "chromium", "firefox", "webkit"
+[2025-11-13T11:50:01.154Z] ⚠️ at filterProjects (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/runner/projectUtils.js:80:11)
+[2025-11-13T11:50:01.154Z] ⚠️ at runTests (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:217:42)
+[2025-11-13T11:50:01.154Z] ⚠️ at i.<anonymous> (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:71:7)
+[2025-11-13T11:50:01.164Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:50:01.518Z] [1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:50:01.519Z] [1A[2K[1/1] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:50:15.840Z] 1) [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ─────────
+[2025-11-13T11:50:15.840Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:50:15.840Z] Expected: visible
+[2025-11-13T11:50:15.840Z] Error: element(s) not found
+[2025-11-13T11:50:15.840Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:50:15.841Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:50:15.848Z] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:50:15.860Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:50:18.442Z] 1) [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:50:18.444Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:50:18.444Z] Expected: visible
+[2025-11-13T11:50:18.444Z] Error: element(s) not found
+[2025-11-13T11:50:18.444Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:50:18.444Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:50:18.457Z] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ───────────
+[2025-11-13T11:50:18.472Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:51:00.306Z] ▶️ Ejecutando test: user.interface.validation en firefox
+[2025-11-13T11:51:00.547Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-13T11:51:00.559Z] ▶️ Ejecutando test: user.interface.validation en chromiun
+[2025-11-13T11:51:01.313Z] ⚠️ Error: Project(s) "chromiun" not found. Available projects: "chromium", "firefox", "webkit"
+[2025-11-13T11:51:01.314Z] ⚠️ at filterProjects (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/runner/projectUtils.js:80:11)
+[2025-11-13T11:51:01.314Z] ⚠️ at runTests (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:217:42)
+[2025-11-13T11:51:01.314Z] ⚠️ at i.<anonymous> (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:71:7)
+[2025-11-13T11:51:01.323Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:51:01.686Z] [1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:51:01.684Z] [1A[2K[1/1] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:51:14.279Z] 1) [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:51:14.281Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:51:14.281Z] Expected: visible
+[2025-11-13T11:51:14.281Z] Error: element(s) not found
+[2025-11-13T11:51:14.281Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:51:14.282Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:51:14.300Z] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ───────────
+[2025-11-13T11:51:14.319Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:51:17.022Z] 1) [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ─────────
+[2025-11-13T11:51:17.022Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:51:17.022Z] Expected: visible
+[2025-11-13T11:51:17.022Z] Error: element(s) not found
+[2025-11-13T11:51:17.022Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:51:17.022Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:51:17.031Z] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:51:17.046Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:52:00.391Z] ▶️ Ejecutando test: user.interface.validation en firefox
+[2025-11-13T11:52:00.632Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-13T11:52:00.647Z] ▶️ Ejecutando test: user.interface.validation en chromiun
+[2025-11-13T11:52:01.411Z] ⚠️ Error: Project(s) "chromiun" not found. Available projects: "chromium", "firefox", "webkit"
+[2025-11-13T11:52:01.411Z] ⚠️ at filterProjects (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/runner/projectUtils.js:80:11)
+[2025-11-13T11:52:01.411Z] ⚠️ at runTests (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:217:42)
+[2025-11-13T11:52:01.411Z] ⚠️ at i.<anonymous> (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:71:7)
+[2025-11-13T11:52:01.421Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:52:01.761Z] [1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:52:01.761Z] [1A[2K[1/1] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:52:17.313Z] 1) [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:52:17.313Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:52:17.314Z] Expected: visible
+[2025-11-13T11:52:17.314Z] Error: element(s) not found
+[2025-11-13T11:52:17.314Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:52:17.314Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:52:17.323Z] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ───────────
+[2025-11-13T11:52:17.337Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:52:20.771Z] [1A[2K  1) [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ─────────
+[2025-11-13T11:52:20.771Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:52:20.771Z] Expected: visible
+[2025-11-13T11:52:20.771Z] Error: element(s) not found
+[2025-11-13T11:52:20.771Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:52:20.771Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:52:20.779Z] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:52:20.793Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:53:00.458Z] ▶️ Ejecutando test: user.interface.validation en firefox
+[2025-11-13T11:53:00.698Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-13T11:53:00.712Z] ▶️ Ejecutando test: user.interface.validation en chromiun
+[2025-11-13T11:53:01.462Z] ⚠️ Error: Project(s) "chromiun" not found. Available projects: "chromium", "firefox", "webkit"
+[2025-11-13T11:53:01.463Z] ⚠️ at filterProjects (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/runner/projectUtils.js:80:11)
+[2025-11-13T11:53:01.463Z] ⚠️ at runTests (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:217:42)
+[2025-11-13T11:53:01.463Z] ⚠️ at i.<anonymous> (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:71:7)
+[2025-11-13T11:53:01.472Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:53:01.824Z] [1A[2K[1/1] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:53:01.824Z] [1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:53:14.256Z] 1) [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:53:14.258Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:53:14.259Z] Expected: visible
+[2025-11-13T11:53:14.259Z] Error: element(s) not found
+[2025-11-13T11:53:14.259Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:53:14.261Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:53:14.298Z] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ───────────
+[2025-11-13T11:53:14.329Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:53:20.405Z] 1) [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ─────────
+[2025-11-13T11:53:20.406Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:53:20.406Z] Expected: visible
+[2025-11-13T11:53:20.406Z] Error: element(s) not found
+[2025-11-13T11:53:20.406Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:53:20.406Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:53:20.419Z] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:53:20.436Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:54:00.778Z] ▶️ Ejecutando test: user.interface.validation en firefox
+[2025-11-13T11:54:00.848Z] ▶️ Ejecutando test: user.interface.validation en chromiun
+[2025-11-13T11:54:00.930Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-13T11:54:01.771Z] ⚠️ Error: Project(s) "chromiun" not found. Available projects: "chromium", "firefox", "webkit"
+[2025-11-13T11:54:01.771Z] ⚠️ at filterProjects (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/runner/projectUtils.js:80:11)
+[2025-11-13T11:54:01.771Z] ⚠️ at runTests (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:217:42)
+[2025-11-13T11:54:01.771Z] ⚠️ at i.<anonymous> (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:71:7)
+[2025-11-13T11:54:01.781Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:54:02.127Z] [1A[2K[1/1] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:54:02.135Z] [1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:54:15.670Z] 1) [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:54:15.670Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:54:15.671Z] Expected: visible
+[2025-11-13T11:54:15.671Z] Error: element(s) not found
+[2025-11-13T11:54:15.671Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:54:15.671Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:54:15.679Z] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ───────────
+[2025-11-13T11:54:15.692Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:54:18.437Z] 1) [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ─────────
+[2025-11-13T11:54:18.438Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:54:18.438Z] Expected: visible
+[2025-11-13T11:54:18.438Z] Error: element(s) not found
+[2025-11-13T11:54:18.438Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:54:18.438Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:54:18.444Z] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:54:18.454Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:55:00.026Z] ▶️ Ejecutando test: user.interface.validation en chromiun
+[2025-11-13T11:55:00.036Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-13T11:55:00.039Z] ▶️ Ejecutando test: user.interface.validation en firefox
+[2025-11-13T11:55:01.158Z] ⚠️ Error: Project(s) "chromiun" not found. Available projects: "chromium", "firefox", "webkit"
+[2025-11-13T11:55:01.159Z] ⚠️ at filterProjects (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/runner/projectUtils.js:80:11)
+[2025-11-13T11:55:01.159Z] ⚠️ at runTests (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:217:42)
+[2025-11-13T11:55:01.159Z] ⚠️ at i.<anonymous> (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:71:7)
+[2025-11-13T11:55:01.173Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:55:01.580Z] [1A[2K[1/1] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:55:01.580Z] [1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:55:15.657Z] 1) [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:55:15.658Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:55:15.658Z] Expected: visible
+[2025-11-13T11:55:15.658Z] Error: element(s) not found
+[2025-11-13T11:55:15.658Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:55:15.658Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:55:15.669Z] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ───────────
+[2025-11-13T11:55:15.688Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:55:17.422Z] 1) [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ─────────
+[2025-11-13T11:55:17.423Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:55:17.423Z] Expected: visible
+[2025-11-13T11:55:17.423Z] Error: element(s) not found
+[2025-11-13T11:55:17.423Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:55:17.423Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:55:17.437Z] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:55:17.461Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:56:00.096Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-13T11:56:00.163Z] ▶️ Ejecutando test: user.interface.validation en chromiun
+[2025-11-13T11:56:00.191Z] ▶️ Ejecutando test: user.interface.validation en firefox
+[2025-11-13T11:56:01.158Z] ⚠️ Error: Project(s) "chromiun" not found. Available projects: "chromium", "firefox", "webkit"
+[2025-11-13T11:56:01.158Z] ⚠️ at filterProjects (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/runner/projectUtils.js:80:11)
+[2025-11-13T11:56:01.158Z] ⚠️ at runTests (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:217:42)
+[2025-11-13T11:56:01.158Z] ⚠️ at i.<anonymous> (/Users/Juarby/NodejsPlaywrigt/node_modules/playwright/lib/program.js:71:7)
+[2025-11-13T11:56:01.170Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:56:01.522Z] [1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:56:01.525Z] [1A[2K[1/1] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T11:56:19.718Z] 1) [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:56:19.719Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:56:19.719Z] Expected: visible
+[2025-11-13T11:56:19.720Z] Error: element(s) not found
+[2025-11-13T11:56:19.720Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:56:19.720Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:56:19.737Z] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ───────────
+[2025-11-13T11:56:19.774Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:56:24.784Z] 1) [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ─────────
+[2025-11-13T11:56:24.786Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T11:56:24.786Z] Expected: visible
+[2025-11-13T11:56:24.786Z] Error: element(s) not found
+[2025-11-13T11:56:24.786Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T11:56:24.786Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T11:56:24.800Z] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T11:56:24.817Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T11:56:44.144Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-13T11:56:44.144Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-13T11:56:44.145Z] 🛑 Todos los schedulers detenidos
+[2025-11-13T11:56:44.145Z] 🛑 Todos los schedulers detenidos
+[2025-11-13T11:56:44.279Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-13T11:56:44.279Z] 🛑 Todos los schedulers detenidos
+[2025-11-13T12:15:44.508Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-13T12:16:00.609Z] ▶️ Ejecutando test: user.interface.validation en firefox
+[2025-11-13T12:16:01.971Z] [1A[2K[1/1] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T12:16:16.186Z] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T12:16:16.186Z] ✅ Botón de Sidenav visible
+[2025-11-13T12:16:21.783Z] 1) [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ─────────
+[2025-11-13T12:16:21.783Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoMatchAriaSnapshot[2m([22m[32mexpected[39m[2m)[22m failed
+[2025-11-13T12:16:21.783Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T12:16:21.802Z] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T12:16:21.833Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T12:17:00.694Z] ▶️ Ejecutando test: user.interface.validation en firefox
+[2025-11-13T12:17:01.917Z] [1A[2K[1/1] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-13T12:17:16.858Z] 1) [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ─────────
+[2025-11-13T12:17:16.859Z] Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+[2025-11-13T12:17:16.859Z] Expected: visible
+[2025-11-13T12:17:16.859Z] Error: element(s) not found
+[2025-11-13T12:17:16.859Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-13T12:17:16.859Z] at /Users/Juarby/NodejsPlaywrigt/tests/ValidateUserInterface/index.spec.ts:6:3
+[2025-11-13T12:17:16.866Z] [firefox] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation ──────────
+[2025-11-13T12:17:16.881Z] ❌ Test user.interface.validation falló con código: 1
+[2025-11-13T12:17:18.033Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-13T12:17:18.033Z] 🛑 Todos los schedulers detenidos
+[2025-11-18T17:24:01.477Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-18T17:25:00.552Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-18T17:25:01.799Z] [1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-18T17:25:12.436Z] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-18T17:25:12.437Z] ✅ Botón de Sidenav visible
+[2025-11-18T17:25:17.513Z] ✅ Header del Sidenav cargado correctamente
+[2025-11-18T17:25:17.533Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-18T17:25:20.845Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-18T17:25:20.963Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-18T17:25:43.358Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-18T17:25:43.359Z] 🛑 Todos los schedulers detenidos
+[2025-11-18T17:26:51.559Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+[2025-11-18T17:27:00.569Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-18T17:27:02.480Z] [1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-18T17:27:11.500Z] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-18T17:27:11.500Z] ✅ Botón de Sidenav visible
+[2025-11-18T17:27:16.686Z] ✅ Header del Sidenav cargado correctamente
+[2025-11-18T17:27:16.739Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-18T17:27:20.706Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-18T17:27:20.930Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-18T17:28:00.779Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-18T17:28:02.281Z] [1A[2K[1/1] [webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-18T17:28:10.230Z] [1A[2K[webkit] › tests/ValidateUserInterface/index.spec.ts:5:5 › user.interface.validation
+[2025-11-18T17:28:10.232Z] ✅ Botón de Sidenav visible
+[2025-11-18T17:28:15.363Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-18T17:28:15.383Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-18T17:28:20.525Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-18T17:28:20.602Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-18T17:28:45.204Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-18T17:28:45.204Z] 🛑 Todos los schedulers detenidos

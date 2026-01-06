@@ -1,0 +1,950 @@
+[2025-11-10T19:38:48.328Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+✅ Scheduler iniciado con ID: user.interface.validation-1m
+[2025-11-10T19:39:03.230Z] 🛑 Tarea detenida: user.interface.validation-1m
+[2025-11-10T19:39:03.468Z] 🚀 Scheduler iniciado: test-inexistente cada 1m (* * * * *)
+✅ Scheduler iniciado con ID: test-inexistente-1m
+[2025-11-10T19:49:32.628Z] 🛑 Tarea detenida: test-inexistente-1m
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+ReferenceError: Cannot access 'EmailNotifier' before initialization
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/email-notifier.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1487:12)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/helpers:135:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module './email-notifier'
+Require stack:
+- /Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Hook._require.Module.require (/Users/Juarby/NodejsPlaywrigt/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/Juarby/NodejsPlaywrigt/scripts/pm2-scheduler.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at /Users/Juarby/NodejsPlaywrigt/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/Users/Juarby/NodejsPlaywrigt/node_modules/async/internal/once.js:12:16)
+[2025-11-11T15:17:59.098Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+✅ Scheduler iniciado con ID: user.interface.validation-1h
+[2025-11-11T15:19:58.433Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T15:19:58.680Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+✅ Scheduler iniciado con ID: user.interface.validation-1h
+[2025-11-11T15:21:49.222Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T15:21:49.483Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+✅ Scheduler iniciado con ID: user.interface.validation-1h
+[2025-11-11T15:21:58.318Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T15:21:58.533Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+✅ Scheduler iniciado con ID: user.interface.validation-1h
+[2025-11-11T15:30:37.816Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T15:30:38.045Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+✅ Scheduler iniciado con ID: user.interface.validation-1h
+[2025-11-11T15:32:46.566Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T17:23:12.490Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+✅ Scheduler iniciado con ID: user.interface.validation-1h
+[2025-11-11T17:23:55.234Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T17:23:55.510Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+✅ Scheduler iniciado con ID: user.interface.validation-1h
+[2025-11-11T17:34:58.372Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T17:34:58.709Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+✅ Scheduler iniciado con ID: user.interface.validation-1h
+[2025-11-11T17:40:37.723Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-11T17:56:45.407Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+✅ Scheduler iniciado con ID: user.interface.validation-1h
+[2025-11-11T18:00:00.869Z] ▶️ Ejecutando test: user.interface.validation en chromium
+[2025-11-11T18:00:14.260Z] Expected: visible
+[2025-11-11T18:00:14.261Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-11T18:02:38.714Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-12T18:56:09.278Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+✅ Scheduler iniciado con ID: user.interface.validation-1h
+[2025-11-12T18:58:07.739Z] 🛑 Tarea detenida: user.interface.validation-1h
+[2025-11-12T18:59:04.164Z] 🚀 Scheduler iniciado: user.interface.validation cada 1h (0 * * * *)
+✅ Scheduler iniciado con ID: user.interface.validation-1h
+[2025-11-12T19:00:00.223Z] ▶️ Ejecutando test: user.interface.validation en chromium
+[2025-11-12T19:00:14.686Z] Expected: visible
+[2025-11-12T19:00:14.688Z] 69 |   console.log('✅ Botón de Sidenav visible');
+[2025-11-12T19:05:14.215Z] 🛑 Tarea detenida: user.interface.validation-1h
+
+Uso: node playwright-scheduler.js <comando> [opciones]
+
+Comandos:
+  start <pattern> <interval> [browser] [mode]  - Iniciar scheduler
+  stop                                         - Detener todos los schedulers
+  status                                       - Ver estado actual
+
+Patrones de test:
+  - user.interface.validation
+  - login
+  - auraview.weather
+  - auraview.histogram
+  - cropstatus
+  - all
+
+Intervalos:
+  - 1m, 5m, 15m, 30m (minutos)
+  - 1h, 2h, 3h, 6h, 12h (horas)
+  - 1d (diario)
+  - workdays (días laborales)
+  - weekends (fines de semana)
+  - O patrón cron personalizado
+
+Ejemplos:
+
+  node scripts/pm2-scheduler.js start user.interface.validation 30m
+  node scripts/pm2-scheduler.js start auraview.weather 2h firefox
+  node scripts/pm2-scheduler.js start login workdays chromium headed
+
+# Ahora funcionará correctamente
+node scripts/pm2-scheduler.js start "user.interface.validation" 2h webkit
+
+# O con PM2
+pm2 restart ui-scheduler --update-env -- start "user.interface.validation" 2h webkit
+
+# Con navegadores específicos:
+# Chromium (por defecto)
+node scripts/pm2-scheduler.js start user.interface.validation 1m chromium headless
+node scripts/pm2-scheduler.js start user.interface.validation 1m chromium headed
+
+# Firefox
+node scripts/pm2-scheduler.js start auraview.weather 30m firefox headless
+node scripts/pm2-scheduler.js start auraview.weather 30m firefox headed
+
+# WebKit
+node scripts/pm2-scheduler.js start login 15m webkit headless
+node scripts/pm2-scheduler.js start login 15m webkit headed
+
+
+Copy
+
+Insert at cursor
+
+    
+
+Uso: node playwright-scheduler.js <comando> [opciones]
+
+Comandos:
+  start <pattern> <interval> [browser] [mode]  - Iniciar scheduler
+  stop                                         - Detener todos los schedulers
+  status                                       - Ver estado actual
+
+Patrones de test:
+  - user.interface.validation
+  - login
+  - auraview.weather
+  - auraview.histogram
+  - cropstatus
+  - all
+
+Intervalos:
+  - 1m, 5m, 15m, 30m (minutos)
+  - 1h, 2h, 3h, 6h, 12h (horas)
+  - 1d (diario)
+  - workdays (días laborales)
+  - weekends (fines de semana)
+  - O patrón cron personalizado
+
+Ejemplos:
+
+  node scripts/pm2-scheduler.js start user.interface.validation 30m
+  node scripts/pm2-scheduler.js start auraview.weather 2h firefox
+  node scripts/pm2-scheduler.js start login workdays chromium headed
+
+# Ahora funcionará correctamente
+node scripts/pm2-scheduler.js start "user.interface.validation" 2h webkit
+
+# O con PM2
+pm2 restart ui-scheduler --update-env -- start "user.interface.validation" 2h webkit
+
+# Ejecutar directamente con PM2
+pm2 start scripts/pm2-scheduler.js --name playwright-scheduler -- start user.interface.validation 1m webkit headless
+
+# Otros ejemplos
+pm2 start scripts/pm2-scheduler.js --name ui-webkit -- start user.interface.validation 30m webkit headed
+pm2 start scripts/pm2-scheduler.js --name weather-firefox -- start auraview.weather 2h firefox headless
+
+
+# Con navegadores específicos:
+# Chromium (por defecto)
+node scripts/pm2-scheduler.js start user.interface.validation 1m chromium headless
+node scripts/pm2-scheduler.js start user.interface.validation 1m chromium headed
+
+# Firefox
+node scripts/pm2-scheduler.js start auraview.weather 30m firefox headless
+node scripts/pm2-scheduler.js start auraview.weather 30m firefox headed
+
+# WebKit
+node scripts/pm2-scheduler.js start login 15m webkit headless
+node scripts/pm2-scheduler.js start login 15m webkit headed
+
+
+Copy
+
+Insert at cursor
+
+    
+[2025-11-12T19:30:13.594Z] 🚀 Scheduler iniciado: user.interface.validation cada 1m (* * * * *)
+✅ Scheduler iniciado con ID: user.interface.validation-1m
+[2025-11-12T19:31:00.765Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:31:12.436Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:32:00.029Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:32:12.375Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:32:16.679Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:32:16.716Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:32:22.504Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T19:32:22.633Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:33:00.131Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:33:13.710Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:34:00.268Z] ▶️ Ejecutando test: user.interface.validation en webkit
+[2025-11-12T19:34:11.120Z] ✅ Botón de Sidenav visible
+[2025-11-12T19:34:16.152Z] [1A[2K✅ Header del Sidenav cargado correctamente
+[2025-11-12T19:34:16.169Z] [1A[2K✅ Body del Sidenav cargado correctamente
+[2025-11-12T19:34:19.457Z] [1A[2Kuser.interface.validation ejecutado en: webkit
+[2025-11-12T19:34:19.545Z] ✅ Test user.interface.validation completado exitosamente en webkit
+[2025-11-12T19:34:58.270Z] 🛑 Tarea detenida: user.interface.validation-1m
